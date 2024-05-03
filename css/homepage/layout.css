@@ -1,0 +1,73 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth; 
+    background-color: rgb(0, 0, 0); 
+
+
+}
+
+
+.footer {
+    display: flex;
+  
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+    font-family: 'Poppins';
+    font-size: 14px;
+    background: linear-gradient(to top, #FF0000, #9C0000, #3F0000, black);
+    color: white;
+  }
+    
+    .footerLogo {
+      margin-bottom: 20px; /* Adjust the margin as needed */
+    }
+  
+    .footerMenuList {
+      list-style-type: none; /* Remove the default bullets */
+    }
+  
+    .footerMenuitem{
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  
+  
+    .footerPolicyItem{
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  
+    .footerPolicies{
+      margin-top: 50px;
+    }
+    
+    .footerLeft,
+    .footerCenter,
+    .footerRight {
+      flex: 1; /* Allow the elements to grow and shrink equally */
+    }
+    
+    /* Additional styling for the footer elements */
+    .footerLeftMenu,
+    .footerCenter,
+    .footerRightMenu {
+      text-align: center; /* Center text horizontally */
+    }
+  
+    .footerLeft{
+      margin-left: 50px;
+    }
+  
+    .footerRight{
+      margin-right: 30px;
+    }
+  
+    footerMenuItem1, footerMenuItem2, footerMenuItem3, footerMenuItem4 {
+      cursor:pointer;
+    }  
+  
+    .test{
+      color: white;
+    }
