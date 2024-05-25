@@ -1,0 +1,53 @@
+
+.productDetails {
+    color: white;
+}
+
+.productPage{
+    display: flex;
+    font-family: 'Poppins';
+    font-size: 14px;
+    background: linear-gradient(to top, #000000, #9C0000, #3F0000, black);
+    color: white;
+    margin-top: 200px;
+    padding: 20px; /* Add padding for even spacing */
+    margin-bottom: 200px;
+}
+
+.productDetails{
+    display: flex;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+    font-family: 'Poppins';
+    font-size: 14px;
+    background: linear-gradient(to top, #b71010, #9C0000, #3F0000, black);
+    color: white;
+}
+
+
+
+.slideshow img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.pageLeft{
+    margin-left: 100px;
+}
+
+.pageRight{
+    margin-left: 100px;
+}
+
+.star-rating {
+    font-size: 24px; /* Adjust the size of the stars */
+}
+
+.star {
+    color: white; /* Color of the stars */
+}
+
+.rating-value {
+    margin-left: 10px; /* Spacing between stars and rating value */
+    font-size: 14px; /* Font size of the rating value */
+}
