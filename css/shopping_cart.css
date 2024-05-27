@@ -7,7 +7,7 @@ body {
 .cart {
     position: fixed;
     top: 0;
-    right: 400px; /* Start the cart off-screen */
+    right: 0px;
     width: 500px;
     height: 100%;
     background-color: #695A5A;
@@ -75,3 +75,4 @@ button {
 button:hover {
     background-color: #555;
 }
+
