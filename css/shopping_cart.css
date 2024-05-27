@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Poppins;
+    color: white;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 400px; /* Start the cart off-screen */
+    width: 500px;
+    height: 100%;
+    background-color: #695A5A;
+    transition: right 0.3s ease; /* Smooth transition for sliding animation */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: -1; /* Hide the overlay initially */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth transition for fading animation */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 300px;
+    margin-bottom: 20px; /* Add margin to create space below the logo */
+}
+
+.title{
+    margin-right: 20px;
+}
+
+.continueShopping {
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Add space between header and cart items */
+}
+
+.bottomSection {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
