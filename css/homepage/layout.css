@@ -4,25 +4,27 @@ body{
   box-sizing: border-box; 
   scroll-behavior: smooth; 
   background-color: rgb(0, 0, 0);
-  height: 100%; 
-
+  width:100vw; 
+  height:100vh;
+  max-width:100%;
 
 }
 
-.navBar {
+.nav {
  
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: fixed;
+  position: relative;
   z-index: 10;
 }
 
-.center-fit {
+.nav__background {
   max-width: 100%;
   max-height: 100%;
   margin: auto;
+  width:100%;
 }
 
 .layer{
@@ -41,7 +43,7 @@ navLogo, navProfile, navCart navSearch{
 
 
 
-.navLogo{
+.nav__logo{
   display: flex;
   align-items: center;
   position: absolute;
@@ -51,7 +53,7 @@ navLogo, navProfile, navCart navSearch{
 }
 
 
-.navSearch{
+.nav__search{
   display: flex;
   align-items: center;
   position: absolute;
@@ -60,7 +62,7 @@ navLogo, navProfile, navCart navSearch{
   cursor: pointer;
 }
 
-.navProfile{
+.nav__profile{
   display: flex;
     align-items: center;
     position: absolute;
@@ -69,7 +71,7 @@ navLogo, navProfile, navCart navSearch{
     cursor: pointer;
 }
 
-.navCart{
+.nav__cart{
   display: flex;
     align-items: center;
     position: absolute;
