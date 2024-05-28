@@ -18,32 +18,32 @@
       <div class="nav__icons">
         <img
           class="nav__logo"
-          src="/img/GDmainlogo.svg"
+          src="../img/GDmainlogo.svg"
           alt="GDmainlogo"
           class="layer"
         />
         <img
           class="nav__profile"
-          src="/img/profile.svg"
+          src="../img/profile.svg"
           alt="profile icon"
           class="layer"
         />
         <img
           class="nav__cart"
-          src="/img/shoppingCart.svg"
+          src="../img/shoppingCart.svg"
           alt="cart icon"
           class="layer"
         />
         <img
           class="nav__search"
-          src="/img/searchIcon.svg"
+          src="../img/searchIcon.svg"
           alt="search icon"
           class="layer"
         />
       </div>
       <img
         class="nav__background"
-        src="/img/navbar2.svg"
+        src="../img/navbar2.svg"
         alt="navbar background"
         class="layer"
       />
@@ -53,7 +53,75 @@
       <h3 class="test">
         TestTestTestTestTestTestTestTestTestTestTestTestTestTest Text
       </h3>
-      <p class="test">TESTING TESTING</p>
+      <p class="test">TESTINGGGG</p>
+    </div>
+    <!--trying another way-->
+    <div class="carousel">
+        <button onclick="function()">View Item</button>
+        <ol featuredlist>
+            <li onclick="changeActive(0)"></li>
+            <li onclick="changeActive(1)"></li>
+            <li onclick="changeActive(2)"></li>
+        </ol>
+    </div>
+
+
+    <!--using radio buttons as slider-->
+    <div class="slideshow">
+      <input type="radio" name="slider" id="slide1" checked />
+      <input type="radio" name="slider" id="slide2" />
+      <input type="radio" name="slider" id="slide3" />
+      <input type="radio" name="slider" id="slide4" />
+      <div id="slides">
+        <div id="overflow">
+          <div class="inner">
+            <div class="slide slide_1">
+              <div class="slide-content">
+                <img
+                  class="slide-content"
+                  src="../img/slideshow-1.jpg"
+                  alt="screenshot1"
+                />
+              </div>
+            </div>
+            <div class="slide slide_2">
+              <div class="slide-content">
+                <img
+                  class="slide-content"
+                  src="../img/slideshow-2.jpg"
+                  alt="screenshot2"
+                />
+              </div>
+            </div>
+            <div class="slide slide_3">
+              <div class="slide-content">
+                <img
+                  class="slide-content"
+                  src="../img/slideshow-3.jpg"
+                  alt="screenshot3"
+                />
+              </div>
+            </div>
+            <div class="slide slide_4">
+              <div class="slide-content">
+                <img class="slide-content" src="" alt="screenshot4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
+      <div id="bullets">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
     </div>
 
     <div class="graphic-container">
