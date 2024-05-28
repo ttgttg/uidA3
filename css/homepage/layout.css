@@ -31,7 +31,7 @@ body{
    
 }
 
-navLogo, navProfile, navCart, navSearch{
+navLogo, navProfile, navCart navSearch{
   max-width: 100%;
   max-height: 100%;
   margin: auto;
@@ -39,11 +39,12 @@ navLogo, navProfile, navCart, navSearch{
 }
 
 
+
 .navLogo{
   display: flex;
   align-items: center;
   position: absolute;
-  top: 40%; 
+  top: 35%; 
   left: 45%; 
   cursor: pointer;
 }
