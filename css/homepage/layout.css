@@ -44,7 +44,7 @@ navLogo, navProfile, navCart navSearch{
   display: flex;
   align-items: center;
   position: absolute;
-  top: 35%; 
+  top: 31%; 
   left: 45%; 
   cursor: pointer;
 }
@@ -54,7 +54,7 @@ navLogo, navProfile, navCart navSearch{
   display: flex;
   align-items: center;
   position: absolute;
-  top: 32%; 
+  top: 26%; 
   left: 3%; 
   cursor: pointer;
 }
@@ -63,7 +63,7 @@ navLogo, navProfile, navCart navSearch{
   display: flex;
     align-items: center;
     position: absolute;
-    top: 30%; 
+    top: 22%; 
     left: 93%; 
     cursor: pointer;
 }
@@ -72,7 +72,7 @@ navLogo, navProfile, navCart navSearch{
   display: flex;
     align-items: center;
     position: absolute;
-    top: 30%; 
+    top: 22%; 
     left: 85%; 
     cursor: pointer;
 }
