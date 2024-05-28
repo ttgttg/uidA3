@@ -78,14 +78,14 @@ navLogo, navProfile, navCart navSearch{
     cursor: pointer;
 }
 
-div.graphicContainer{
+div.graphic-container{
   margin:0;
   padding:0;
   box-sizing:border-box;
   height:100vw;
 }
 
-div.graphicContainerInner{
+div.graphic-container-inner{
   position:relative;
   width:100%;
   height:100%;
@@ -95,7 +95,7 @@ div.graphicContainerInner{
   overflow: hidden;
 }
 
-div.graphicContainerInner img{
+div.graphic-container-inner img{
   position:absolute;
   width:100%;
   height:100%;
