@@ -76,6 +76,32 @@ navLogo, navProfile, navCart, navSearch{
     cursor: pointer;
 }
 
+div.graphicContainer{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  height:100vw;
+}
+
+div.graphicContainerInner{
+  position:relative;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  overflow: hidden;
+}
+
+div.graphicContainerInner img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  object-fit: contain;
+}
+
 .footer {
     display: flex;
   
