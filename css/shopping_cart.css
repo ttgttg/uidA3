@@ -1,8 +1,12 @@
 body {
     margin: 0;
     font-family: Poppins;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (alpha) to control transparency */
+    overflow: hidden; /* Prevent scrolling on the main page when the cart is open */
 }
+
+
+
 
 .cart {
     position: fixed;

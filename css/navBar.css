@@ -1,0 +1,72 @@
+.nav {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+    
+  }
+  
+  .nav__background {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    width:100%;
+  }
+  
+  
+  navLogo, navProfile, navCart navSearch{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    position: absolute;
+  }
+  
+  
+  
+  .nav__logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 31%; 
+    left: 45%; 
+    cursor: pointer;
+  }
+  
+  
+  .nav__search{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 26%; 
+    left: 3%; 
+    cursor: pointer;
+  }
+  
+  .nav__profile{
+    display: flex;
+      align-items: center;
+      position: absolute;
+      top: 22%; 
+      left: 93%; 
+      cursor: pointer;
+  }
+  
+  .nav__cart{
+    display: flex;
+      align-items: center;
+      position: absolute;
+      top: 22%; 
+      left: 85%; 
+      cursor: pointer;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
