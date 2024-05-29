@@ -176,7 +176,7 @@ div.graphic-container-inner img{
     text-align: center; /* Center text horizontally */
     font-family: 'Poppins';
     font-size: 14px;
-    background: linear-gradient(to top, #FF0000, #9C0000, #3F0000, black);
+    background: linear-gradient(to top, #9A3426, #8a2d20, black);
     color: white;
   }
     
@@ -218,6 +218,37 @@ div.graphic-container-inner img{
   
     .footerLeft{
       margin-left: 50px;
+      margin-top: 155px;
+    }
+
+    .emailButton {
+      background-color: #E83A22;
+      color: white; 
+      font-size: 16px; 
+      padding: 5px 20px; 
+      border: none; 
+      border-radius: 5px; 
+      margin-left: 10px;
+    }
+
+    
+    .emailButton:hover {
+      background-color: darkred;
+    }
+
+    .footerInput{
+      background-color: white; 
+      color: white;
+      font-size: 16px; 
+      padding: 5px 30px; 
+      border: none; 
+      border-radius: 10px; 
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    
+    .socialMedia{
+      margin-top: 100px;
     }
   
     .footerRight{
@@ -229,12 +260,14 @@ div.graphic-container-inner img{
     }  
 
     .paymentMethods{
-      margin-top: 225px;
+      margin-top: 230px;
     }
   
     .paymentOptions{
       margin-top: 50px;
     }
+
+
 
     .test{
       color: white;
