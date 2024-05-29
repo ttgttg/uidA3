@@ -8,19 +8,55 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="../css/homepage/layout.css">
     <link rel="stylesheet" href="../css/product-page.css">
+    <link rel="stylesheet" href="../css/navBar.css">
+
 </head>
 <body>
     <!--Nav-->
     
-    <div class="navBar">
-        <div class="navItems">
-            <img class="navLogo" src="/img/GDmainlogo.svg" alt="" class="layer">
-            <img class="navProfile" src="/img/profile.svg" alt="" class="layer">
-            <img class="navCart" src="/img/shoppingCart.svg" alt="" class="layer">
-            <img class="navSearch" src="/img/searchIcon.svg" alt="" class="layer">
-    </div>
-        <img class="center-fit" src="/img/navBar.svg" alt="" class="layer">
-    </div> 
+    <div class="nav">
+        <div class="nav__icons">
+          <img
+            class="nav__logo"
+            src="../img/GDmainlogo.svg"
+            alt="GDmainlogo"
+            class="layer"
+          />
+          <img
+            class="nav__profile"
+            src="../img/profile.svg"
+            alt="profile icon"
+            class="layer"
+          />
+          <a href="../html/shopping_cart.html"> <!--connecting to shopping page-->
+              <img
+                class="nav__cart"
+                src="../img/shoppingCart.svg"
+                alt="cart icon"
+                class="layer"
+              />
+            </a>
+
+            <a href="../html/search.html">
+          <img
+            class="nav__search"
+            src="../img/searchIcon.svg"
+            alt="search icon"
+            class="layer"
+          />
+          </a>
+
+  
+        </div>
+        <img
+          class="nav__background"
+          src="../img/navbar2.svg"
+          alt="navbar background"
+          class="layer"
+        />
+      </div>
+  
+  
 
     
     <!--Product page - need to add BACK TO PRODUCT LISTING-->
@@ -79,6 +115,58 @@
     
 
     <!--footer-->
+
+    <div class="footer">
+      <div class="footerLeft">
+        <div class="footerLeftMenu">
+          <p class="footerLeftMenuTitle">
+            Join our community newsletter and receive updates on the latest
+            offers and game news!
+          </p>
+          <div class="footerEmail">
+            <input type="text" placeholder=" " class="footerInput" />
+            <button class="emailButton">Subscribe!</button>
+          </div>
+          <div class="socialMedia">
+            <img src="/img/socialMedia.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="footerCenter">
+        <div class="footerLogo">
+          <img src="../img/GDbiglogo.svg" alt="" />
+        </div>
+        <div class="footerMenu">
+          <h1 class="footerMenuTitle">CUSTOMER SUPPORT</h1>
+          <p class="footerMenuItem1">Contact Us</p>
+          <p class="footerMenuItem2">FAQs</p>
+          <p class="footerMenuItem3">Return and Exchange Policy</p>
+          <p class="footerMenuItem4">Warranty</p>
+          <!--policies list-->
+          <h3 class="footerPolicies">POLICIES</h3>
+          <p class="footerPolicyItem1">Privacy Policy</p>
+          <p class="footerPolicyItem1">Accessibility Policy</p>
+          <p class="footerPolicyItem1">Shipping Information</p>
+          <p class="footerPolicyItem1">Terms and Conditions</p>
+        </div>
+      </div>
+
+      <div class="footerRight">
+        <div class="footerRightMenu">
+            <div class="paymentMethods">
+                <h1>Payment Methods</h1>
+          <img src="/img/paymentMethods.svg" alt="">
+            </div>
+            <div class="paymentOptions">
+                <h1>Buy Now, Pay Later</h1>
+                <img src="/img/payOptions.svg" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
 
 
