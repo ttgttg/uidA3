@@ -12,6 +12,7 @@
     />
     <script type="text/javascript" src="../js/indextest.js"></script>
     <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="stylesheet" href="../css/search.css" />
 
 
   </head>
@@ -40,12 +41,26 @@
               class="layer"
             />
           </a>
+    <!--
+          <a href="../html/search.html">
         <img
           class="nav__search"
           src="../img/searchIcon.svg"
           alt="search icon"
           class="layer"
         />
+        </a>
+
+        -->
+
+        <form>
+            <div class="nav__search">
+                <img src="/img/searchIcon.svg" class="searchIcon"></img>
+                <input class="searchInput" type="search" placeholder="Search">
+                <img src="/img/close.svg" class="close">
+            </div>
+        </form>
+
       </div>
       <img
         class="nav__background"
@@ -262,7 +277,14 @@
 
       <div class="footerRight">
         <div class="footerRightMenu">
-          <h1 class="paymentMethods">Payment Methods</h1>
+            <div class="paymentMethods">
+                <h1>Payment Methods</h1>
+          <img src="/img/paymentMethods.svg" alt="">
+            </div>
+            <div class="paymentOptions">
+                <h1>Buy Now, Pay Later</h1>
+                <img src="/img/payOptions.svg" alt="">
+            </div>
         </div>
       </div>
     </div>

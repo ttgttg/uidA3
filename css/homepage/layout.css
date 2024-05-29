@@ -227,7 +227,15 @@ div.graphic-container-inner img{
     footerMenuItem1, footerMenuItem2, footerMenuItem3, footerMenuItem4 {
       cursor:pointer;
     }  
+
+    .paymentMethods{
+      margin-top: 225px;
+    }
   
+    .paymentOptions{
+      margin-top: 50px;
+    }
+
     .test{
       color: white;
     }
