@@ -1,0 +1,75 @@
+/* CSS for Product Details */
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .headings {
+    display: flex;
+    color: #515151;
+  }
+  
+  .heading {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px 37.9px;
+    background-color: #ddd;
+    color: #515151;
+    border-radius: 12px 12px 0 0; /* Top-left and top-right corners */
+  }
+  
+  .heading.active {
+    background-color: #FFEFEA;
+    color: #fff;
+    color: #515151;
+  }
+  
+  form {
+    background-color: #FFEFEA;
+    max-width: 450px;
+    border-radius: 0 0 12px 12px; /* Top-left and top-right corners */
+  }
+  
+  fieldset{
+    border: none;
+    width: 100%; /* Ensure each fieldset spans the full width */
+    height: 300px; /* Set the height of each fieldset */
+
+  }
+  
+
+  fieldset img {
+    display: block; /* Ensure the image is displayed as a block element */
+    margin-top: -100px;
+    width: 450px;
+
+  }
+  
+  .shipping {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .reviews {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    padding: 20px;
+  }
+  
+  .icons {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the icons horizontally */
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .icons img {
+    display: flex;
+    width: 90px; /* Set the width of the icons */
+    margin: 25px; /* Add some space between the icons */
+  }

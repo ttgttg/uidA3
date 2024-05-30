@@ -14,7 +14,7 @@
 }
 
 
-.productDetails {
+.product{
     display: flex;
     font-family: 'Poppins';
     font-size: 14px;
@@ -29,10 +29,20 @@
     margin-left: 100px;
 }
 
+.back{
+    margin-left: -90px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.image{ 
+margin-top: 50px;
+}
+
 .pageRight {
     flex: 1;
     padding: 20px;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .description {
@@ -44,11 +54,15 @@
 }
 
 
+
 .slideshow img {
     max-width: 100%; /* Ensure the image fits within its container */
     height: auto; /* Maintain aspect ratio */
 }
 
+.productDescription{
+    margin-top: -50px;
+}
 
 .star-rating {
     font-size: 24px; /* Adjust the size of the stars */
@@ -96,3 +110,70 @@
     cursor: pointer; /* Change cursor to pointer on hover for better user experience */
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    color: white;
+}
+
+.checkoutContainer {
+    display: flex;
+    height: 100%;
+}
+
+.checkoutSection, .orderSummarySection {
+    flex: 1;
+}
+
+/* Optional: Adjust styling for each section */
+.checkoutSection {
+    background-color: #3A2E2E;
+}
+
+.orderSummarySection {
+    background-color: #271F1F;
+}
+
+.checkoutDetails{
+    margin-top: 75px;
+    margin-left: 75px;
+}
+
+.orderDetails{
+    margin-top: 75px;
+    margin-left: 75px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 250px;
+    margin-bottom: 20px; /* Add margin to create space below the logo */
+}
+
+.customer-form {
+    padding: 20px;
+    background-color: #FFEFEA;
+    color: #833016;
+    max-width: 500px;
+    
+}
+
+.customer-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.customer-form input {
+    margin-bottom: 10px;
+}
+
+.title{
+    padding: 10px;
+    background-color: #FFEFEA;
+    color: #833016;
+    max-width: 200px;
+}
