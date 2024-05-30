@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: Poppins;
-    overflow: hidden; /* Prevent scrolling on the main page when the cart is open */
     color: white;
 }
 
@@ -15,27 +14,24 @@ body {
     width: 500px;
     height: 100%;
     background-color: #695A5A;
-    transition: right 0.3s ease; /* Smooth transition for sliding animation */
-}
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: none; /* Initially hidden */
+transition: right 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  .cart.show {
+    display: block; /* Show the cart when 'show' class is applied */
+  }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    z-index: -1; /* Hide the overlay initially */
-    opacity: 0; /* Initially invisible */
-    transition: opacity 0.3s ease; /* Smooth transition for fading animation */
-}
+
 
 ul {
     list-style-type: none;
     padding: 0;
 }
 
-.title{
+.cart-title{
     margin-right: 20px;
 }
 
