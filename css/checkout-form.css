@@ -1,0 +1,80 @@
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  
+  .headings {
+    display: flex;
+    color: #515151;
+  }
+  
+  .heading {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px 72.6px;
+    background-color: #ddd;
+    color: #515151;
+    border-radius: 12px 12px 0 0; /* Top-left and top-right corners */
+  }
+  
+  .heading.active {
+    background-color: #FFEFEA;
+    color: #fff;
+    color: #515151;
+  }
+
+  form {
+    background-color: #FFEFEA;
+    max-width: 500px;
+    height: 600px;
+    border-radius: 0 0 12px 12px; /* Top-left and top-right corners */
+  }
+  
+  fieldset{
+    border: none;
+    width: 100%; /* Ensure each fieldset spans the full width */
+    height: 300px; /* Set the height of each fieldset */
+
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #833016;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 400px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+select {
+    appearance: none;
+}
+
+/* Style for submit button */
+button[type="submit"] {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
