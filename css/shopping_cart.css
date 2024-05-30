@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: Poppins;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (alpha) to control transparency */
     overflow: hidden; /* Prevent scrolling on the main page when the cart is open */
+    color: white;
 }
 
 
@@ -35,7 +35,6 @@ ul {
     padding: 0;
 }
 
-c
 .title{
     margin-right: 20px;
 }
@@ -53,17 +52,29 @@ c
     margin-bottom: 20px; /* Add space between header and cart items */
 }
 
+.logo {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center;
+    margin-top: 300px;
+  }
+  
+  .logo img {
+    width: 300px;
+  }
+
 .bottomSection {
     position: fixed;
     bottom: 0;
     width: 100%;
     padding: 20px;
+    margin-left: 56px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px 150px;
     margin-top: 10px;
-    background-color: red;
+    background-color: #E83A22;
     color: white;
     border: none;
     cursor: pointer;
