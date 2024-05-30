@@ -42,7 +42,11 @@ margin-top: 50px;
 .pageRight {
     flex: 1;
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 120px;
+}
+
+.productOptions{
+    margin-top: 50px;
 }
 
 .description {

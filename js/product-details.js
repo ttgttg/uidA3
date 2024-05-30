@@ -1,4 +1,4 @@
-// JavaScript for Step Headings
+// JavaScript for Step Headings - flip through
 const headings = document.querySelectorAll('.heading');
 const fieldsets = document.querySelectorAll('fieldset');
 
