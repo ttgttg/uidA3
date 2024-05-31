@@ -33,6 +33,7 @@
     margin-left: -90px;
     cursor: pointer;
     text-decoration: underline;
+    color: white;
 }
 
 .image{ 
@@ -180,4 +181,12 @@ html, body {
     background-color: #FFEFEA;
     color: #833016;
     max-width: 200px;
+}
+
+#addToCartMessage {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
