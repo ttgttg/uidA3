@@ -3,7 +3,7 @@ body{
   padding: 0;
   box-sizing: border-box; 
   scroll-behavior: smooth; 
-  background-color: rgb(0, 0, 0);
+  background-color: #16151A;
   width:100vw; 
   height:100vh;
   max-width:100%;

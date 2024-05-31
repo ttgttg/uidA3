@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/product-list.css">
     <link rel="stylesheet" href="../css/navBar.css">
     <link rel="stylesheet" href="../css/shopping_cart.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
 </head>
 <body>
@@ -72,6 +73,13 @@
 
     </header>
 
+        <!--headings-->
+        <div class="headings">
+            <p>FILTER</p>
+            <p>Showing 1 of 22 items</p>
+            <p>SORT BY</p>
+        </div>
+
     <!-- filter -->
     <div class="filter">
         <label>FILTER BY ></label>
@@ -97,16 +105,50 @@
             <li>Simulation</li>
         </ul>
     </div>
+
+
     
     <!-- product list-->
     <div class="product-list">
         <div class="product-row">
+            <div class="product-card" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
+                <img src="/img/splatoonCard.svg" alt="Product Image" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-title">Product Name</h2>
+                    <p class="product-description">Product description goes here.</p>
+                    <p class="product-price">$20.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            
+
+        <div class="product-card">
+            <img src="/img/cultofthelamb.svg" alt="Product Image" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">Product Name</h2>
+                <p class="product-description">Product description goes here.</p>
+                <p class="product-price">$20.00</p>
+
+            </div>
+        </div>
+
         <div class="product-card">
             <img src="/img/splatoonCard.svg" alt="Product Image" class="product-image">
             <div class="product-info">
                 <h2 class="product-title">Product Name</h2>
                 <p class="product-description">Product description goes here.</p>
                 <p class="product-price">$20.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-row">
+        <div class="product-card">
+            <img src="/img/cultofthelamb.svg" alt="Product Image" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">Cult of the Lamb</h2>
+                <p class="product-description">Nintendo Switch</p>
+                <p class="product-price">$59.95</p>
             </div>
         </div>
 
@@ -132,11 +174,11 @@
 
     <div class="product-row">
         <div class="product-card">
-            <img src="/img/splatoonCard.svg" alt="Product Image" class="product-image">
+            <img src="/img/ittakestwoCard.svg" alt="Product Image" class="product-image">
             <div class="product-info">
-                <h2 class="product-title">Product Name</h2>
-                <p class="product-description">Product description goes here.</p>
-                <p class="product-price">$20.00</p>
+                <h2 class="product-title">It Takes Two</h2>
+                <p class="product-description">Nintendo Switch</p>
+                <p class="product-price">$29.95</p>
             </div>
         </div>
 
@@ -160,41 +202,73 @@
         </div>
     </div>
 
-    <div class="product-row">
-        <div class="product-card">
-            <img src="/img/splatoonCard.svg" alt="Product Image" class="product-image">
-            <div class="product-info">
-                <h2 class="product-title">Product Name</h2>
-                <p class="product-description">Product description goes here.</p>
-                <p class="product-price">$20.00</p>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="/img/splatoonCard.svg" alt="Product Image" class="product-image">
-            <div class="product-info">
-                <h2 class="product-title">Product Name</h2>
-                <p class="product-description">Product description goes here.</p>
-                <p class="product-price">$20.00</p>
-
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="/img/splatoonCard.svg" alt="Product Image" class="product-image">
-            <div class="product-info">
-                <h2 class="product-title">Product Name</h2>
-                <p class="product-description">Product description goes here.</p>
-                <p class="product-price">$20.00</p>
-            </div>
-        </div>
     </div>
 
+    <div class="page">
+        <p>< Page 1 of 3 ></Page></p>
     </div>
         
 
     <!--footer-->
+    <div class="footer">
+        <img class="footer__logo" src="../img/GDbiglogo.svg" alt="" />
+        <div class="footer__content">
+          
+          <div class="footer__left">
+            <div class="footer__menu">
+              <h2 class="footer__menu__title--left">
+                Join our community newsletter to receive updates on the latest
+                offers and game news!
+              </h2>
+              <div class="footer__subscribe">
+                <input class="footer__subscribe__input" type="text" placeholder="Your Email"  />
+                <button class="footer__subscribe__button">Subscribe!</button>
+              </div>
+              <div class="footer__socialmedia">
+                <img src="/img/socialMedia.svg" alt="">
+              </div>
+            </div>
+          </div>
+  
+          <div class="footer__center">
+            <div class="footer__menu">
+              <h1 class="footer__menu__title">CUSTOMER SUPPORT</h1>
+              <p class="footer__item">Contact Us</p>
+              <p class="footer__item">FAQs</p>
+              <p class="footer__item">Return and Exchange Policy</p>
+              <p class="footer__item">Warranty</p>
+            </div>
+            <!--policies list-->
+            <div class="footer__menu">
+              <h1 class="footer__menu__title">POLICIES</h1>
+              <p class="footer__item">Privacy Policy</p>
+              <p class="footer__item">Accessibility Policy</p>
+              <p class="footer__item">Shipping Information</p>
+              <p class="footer__item">Terms and Conditions</p>
+            </div>
+          </div>
+  
+          <div class="footer__right">
+            <div class="footer__menu">
+                <div class="footer__menu__title">
+                    <h1>Payment Methods</h1>
+                    <img class="footer__right__img" src="/img/paymentMethods.svg" alt="">
+                </div>
+            </div>
+            <div class="footer__menu">
+              <div class="footer__menu__title">
+                    <h1>Buy Now, Pay Later</h1>
+                    <img class="footer__right__img" src="/img/payOptions.svg" alt="">
+                </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+  
 
-
+    <script src="/JS/add-to-cart.js"></script>
+    <script src="/JS/add-hover.js"></script>
 </body>
 </html>

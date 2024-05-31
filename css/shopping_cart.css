@@ -100,4 +100,5 @@ button:hover {
 .product-content {
     display: flex; /* Use flexbox to arrange items in a row */
     align-items: center; /* Align items vertically */
+    margin-left: 10px;
 }
