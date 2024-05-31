@@ -8,19 +8,59 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="../css/homepage/layout.css">
     <link rel="stylesheet" href="../css/product-list.css">
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/shopping_cart.css">
 
 </head>
 <body>
     <!-- nav bar-->
-    <div class="navBar">
-        <div class="navItems">
-            <img class="navLogo" src="/img/GDmainlogo.svg" alt="" class="layer">
-            <img class="navProfile" src="/img/profile.svg" alt="" class="layer">
-            <img class="navCart" src="/img/shoppingCart.svg" alt="" class="layer">
-            <img class="navSearch" src="/img/searchIcon.svg" alt="" class="layer">
-    </div>
-        <img class="center-fit" src="/img/navBar.svg" alt="" class="layer">
-    </div>
+ <!--Nav-->
+    
+    <!--nav bar -->
+    <div class="nav">
+      <div class="nav__icons">
+          <img class="nav__logo" src="../img/GDmainlogo.svg" alt="GDmainlogo" class="layer" />
+          <img class="nav__profile" src="../img/profile.svg" alt="profile icon" class="layer" />
+          <img class="nav__cart" src="../img/shoppingCart.svg" alt="cart icon" class="layer" id="cartIcon">
+
+      </div>
+      <img class="nav__background" src="../img/navbar2.svg" alt="navbar background" class="layer" />
+  </div>
+
+   <!--overlay-->
+   <div class="overlay" id="overlay"></div>
+
+  <!--shopping cart-->
+  <div class="cart" id="cart">
+      <div class="header">
+          <div class="continueShopping">
+              <p>< CONTINUE SHOPPING</p>
+          </div>
+          <div class="cart-title">
+              <h2>YOUR CART</h2>
+          </div>
+      </div>
+      <!--
+      <div class="logo">
+          <img src="/img/gdLogoSmall.svg" alt="">
+      </div>
+      -->
+      <div class="listCart">
+
+        
+      </div>
+      <div class="bottomSection">
+          <div class="cartDetails">
+              <p> <span id="numberOfItems">0</span> Item(s)</p>
+              <p>Total $<span id="totalPrice">0.00</span></p>
+          </div>
+          <button id="checkoutBtn">CHECKOUT</button>
+      </div>
+  </div>
+
+  <script src="/JS/shopping-cart.js"></script>
+  <script src="/JS/close-cart.js"></script>
+  
 
     <!--header-->
     <header class="NintendoPL">

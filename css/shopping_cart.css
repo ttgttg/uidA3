@@ -17,7 +17,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
     display: none; /* Initially hidden */
-transition: right 0.3s ease; /* Add smooth transition effect */
+transition: 0.5s;
   }
   
   .cart.show {
@@ -53,6 +53,7 @@ ul {
     justify-content: center; /* Center the logo horizontally */
     align-items: center;
     margin-top: 300px;
+    z-index: 1;
   }
   
   .logo img {
@@ -80,3 +81,23 @@ button:hover {
     background-color: #555;
 }
 
+.cart-item-image {
+    display: flex;
+    max-width: 150px; /* Adjust the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.cart-item {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+    z-index: 2;
+}
+
+.product-content {
+    display: flex; /* Use flexbox to arrange items in a row */
+    align-items: center; /* Align items vertically */
+}

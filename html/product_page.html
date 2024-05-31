@@ -24,6 +24,7 @@
           <img class="nav__logo" src="../img/GDmainlogo.svg" alt="GDmainlogo" class="layer" />
           <img class="nav__profile" src="../img/profile.svg" alt="profile icon" class="layer" />
           <img class="nav__cart" src="../img/shoppingCart.svg" alt="cart icon" class="layer" id="cartIcon">
+
       </div>
       <img class="nav__background" src="../img/navbar2.svg" alt="navbar background" class="layer" />
   </div>
@@ -41,10 +42,15 @@
               <h2>YOUR CART</h2>
           </div>
       </div>
+      <!--
       <div class="logo">
           <img src="/img/gdLogoSmall.svg" alt="">
       </div>
-      <ul id="cartItems"></ul>
+      -->
+      <div class="listCart">
+
+        
+      </div>
       <div class="bottomSection">
           <div class="cartDetails">
               <p> <span id="numberOfItems">0</span> Item(s)</p>
@@ -64,7 +70,7 @@
 
         <div class="pageLeft">
             <div class="back">
-                <p> < BACK TO PRODUCT LISTING</p>
+              <a href="/html/product_list.html"> < BACK TO PRODUCT LISTING</a>
             </div>
             <div class="image">
                 <img src="/img/cultofthelamb.svg" alt="" width="500px"> 
@@ -93,6 +99,7 @@
                         <input type="number" min="0" value="1" class="quantity-input">
                         <button type="button" class="btn quantity-btn increase-btn">+</button>
                         <button type="button" class="btn add-to-cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button>
+                        <div id="addToCartMessage" style="display: none;">Item added to cart!</div>
                     </div>
                     
                 </div>
@@ -212,5 +219,7 @@
 
 
 <script src="/JS/product-details.js"></script>
+<script src="/JS/add-to-cart.js"></script>
+<script src="/JS/count.js"></script>
 </body>
 </html>
