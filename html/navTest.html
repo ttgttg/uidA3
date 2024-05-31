@@ -8,12 +8,23 @@
     <link rel="stylesheet" href="../css/navBar.css" />
     <link rel="stylesheet" href="../css/homepage/layout.css" />
     <link rel="stylesheet" href="/css/shopping_cart.css">
+    <link rel="stylesheet" href="../css/searchbar.css" />
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
     <!--nav bar -->
     <div class="nav">
         <div class="nav__icons">
+            <div div class="nav__searchcontainer">
+                <div class="nav__search">
+                    <div class="nav__search__icon"><img src="/img/searchRed.svg" style="width:50%"></img></div>
+                    <div class="nav__search__input">
+                    <input type="text" placeholder="Search" id="mySearch" />
+                    </div>
+                    <span class="nav__search__clear"></span>
+                </div>
+                <script type="text/javascript" src="../js/searchbar.js"></script>
+            </div>
             <img class="nav__logo" src="../img/GDmainlogo.svg" alt="GDmainlogo" class="layer" />
             <img class="nav__profile" src="../img/profile.svg" alt="profile icon" class="layer" />
             <img class="nav__cart" src="../img/shoppingCart.svg" alt="cart icon" class="layer" id="cartIcon">
