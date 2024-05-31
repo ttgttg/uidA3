@@ -6,12 +6,12 @@
     justify-content:space-evenly;
     font-family: 'Poppins';
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     background: linear-gradient(to top, #9A3426, #16151A);
     }
   
     .footer__logo {
-    margin: 5em; /* Adjust the margin as needed */
+    margin: 4em; /* Adjust the margin as needed */
     }  
   
     .footer__content{
