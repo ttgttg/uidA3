@@ -111,14 +111,16 @@
     <!-- product list-->
     <div class="product-list">
         <div class="product-row">
-        <div class="product-card">
-            <img src="/img/splatoonCard.svg" alt="Product Image" class="product-image">
-            <div class="product-info">
-                <h2 class="product-title">Splatoon</h2>
-                <p class="product-description">Nintendo Switch</p>
-                <p class="product-price">$65.95</p>
+            <div class="product-card" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
+                <img src="/img/splatoonCard.svg" alt="Product Image" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-title">Product Name</h2>
+                    <p class="product-description">Product description goes here.</p>
+                    <p class="product-price">$20.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
             </div>
-        </div>
+            
 
         <div class="product-card">
             <img src="/img/cultofthelamb.svg" alt="Product Image" class="product-image">
@@ -267,5 +269,6 @@
   
 
     <script src="/JS/add-to-cart.js"></script>
+    <script src="/JS/add-hover.js"></script>
 </body>
 </html>
