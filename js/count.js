@@ -1,15 +1,19 @@
-// Add event listeners to increase and decrease buttons
-const increaseBtn = document.querySelector('.increase-btn');
-const decreaseBtn = document.querySelector('.decrease-btn');
-const quantityInput = document.querySelector('.quantity-input');
+document.addEventListener('DOMContentLoaded', function() {
+    const decreaseBtn = document.querySelector('.decrease-btn');
+    const increaseBtn = document.querySelector('.increase-btn');
+    const quantityInput = document.querySelector('.quantity-input');
 
-increaseBtn.addEventListener('click', () => {
-    quantityInput.value = parseInt(quantityInput.value) + 1;
-});
+    decreaseBtn.addEventListener('click', function() {
+        // Decrease the input value by 1, but don't go below the minimum value
+        if (parseInt(quantityInput.value) > quantityInput.min) {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
+        }
+    });
 
-decreaseBtn.addEventListener('click', () => {
-    const currentValue = parseInt(quantityInput.value);
-    if (currentValue > 1) {
-        quantityInput.value = currentValue - 1;
-    }
+    increaseBtn.addEventListener('click', function() {
+        // Increase the input value by 1, but don't go above the maximum value
+        if (parseInt(quantityInput.value) < quantityInput.max || !quantityInput.hasAttribute('max')) {
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+    });
 });

@@ -1,4 +1,6 @@
-
+body{
+    font-family: Poppins;
+}
 
 
 .NintendoPL{
@@ -11,6 +13,7 @@
     height: auto; /* Automatically adjust height to maintain aspect ratio */
     display: block; /* Ensures the image behaves as a block element */
 }
+
 
 
 
@@ -136,12 +139,13 @@
 
 .add-to-cart-btn {
     position: absolute;
-    bottom: 10px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
 }
 
 .product-card:hover .add-to-cart-btn {

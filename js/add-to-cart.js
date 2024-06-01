@@ -27,20 +27,28 @@ addToCartBtn.addEventListener('click', () => {
     showAddToCartMessage();
 });
 
-/// Update cart and display
+
+
+// Update cart and display
+// Update cart and display
 function updateCart() {
     cartItemsContainer.innerHTML = '';
     let totalItems = 0;
     let totalCost = 0;
-    cart.forEach(item => {
+    cart.forEach((item, index) => {
         const itemElement = document.createElement('div');
         itemElement.classList.add('cart-item');
         itemElement.innerHTML = `
-            <img src="${item.image}" alt="${item.name}" class="cart-item-image"> <!-- Added class to the image -->
+            <img src="${item.image}" alt="${item.name}" class="cart-item-image">
             <div class="product-content">
                 <h3>${item.name}</h3>
                 <p>Price: $${item.price}</p>
-                <p>Quantity: ${item.quantity}</p>
+                <p>Quantity: 
+                    <button class="decrement-quantity-btn" data-index="${index}">-</button>
+                    <span class="quantity">${item.quantity}</span>
+                    <button class="increment-quantity-btn" data-index="${index}">+</button>
+                </p>
+                <button class="remove-item-btn" data-index="${index}">Remove</button>
             </div>
         `;
         cartItemsContainer.appendChild(itemElement);
@@ -49,7 +57,49 @@ function updateCart() {
     });
     numberOfItems.textContent = totalItems;
     totalPrice.textContent = totalCost.toFixed(2);
+
+    // Add event listeners to remove buttons
+    const removeButtons = document.querySelectorAll('.remove-item-btn');
+    removeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const indexToRemove = parseInt(button.getAttribute('data-index'));
+            removeFromCart(indexToRemove);
+        });
+    });
+
+    // Add event listeners to increment buttons
+    const incrementButtons = document.querySelectorAll('.increment-quantity-btn');
+    incrementButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const indexToUpdate = parseInt(button.getAttribute('data-index'));
+            increaseQuantity(indexToUpdate);
+        });
+    });
+
+    // Add event listeners to decrement buttons
+    const decrementButtons = document.querySelectorAll('.decrement-quantity-btn');
+    decrementButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const indexToUpdate = parseInt(button.getAttribute('data-index'));
+            decreaseQuantity(indexToUpdate);
+        });
+    });
 }
+
+// Increase quantity of an item
+function increaseQuantity(index) {
+    cart[index].quantity++;
+    updateCart();
+}
+
+// Decrease quantity of an item
+function decreaseQuantity(index) {
+    if (cart[index].quantity > 1) {
+        cart[index].quantity--;
+        updateCart();
+    }
+}
+
 // Show "Item added to cart" message
 function showAddToCartMessage() {
     const message = document.getElementById('addToCartMessage');
@@ -57,4 +107,10 @@ function showAddToCartMessage() {
     setTimeout(() => {
         message.style.display = 'none';
     }, 2000);
+}
+
+// Remove item from cart
+function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCart(); // Update cart display after removal
 }
