@@ -6,7 +6,7 @@
     position: fixed;
     z-index: 10;
     overflow: hidden;
-    
+    top: 0%;
   }
   
   .nav__background {

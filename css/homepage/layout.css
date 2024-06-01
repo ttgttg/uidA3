@@ -168,3 +168,7 @@ div.graphic-container-inner img{
   left:0;
   object-fit: contain;
 }
+
+.slideshow{
+  margin-top: 150px;
+}
