@@ -25,9 +25,18 @@ addToCartBtn.addEventListener('click', () => {
     cart.push(item);
     updateCart();
     showAddToCartMessage();
+
+    localStorage.setItem('cart', JSON.stringify(cart));
 });
 
-
+// Load cart data from localStorage on page load
+window.addEventListener('DOMContentLoaded', () => {
+    const savedCart = localStorage.getItem('cart');
+    if (savedCart) {
+        cart = JSON.parse(savedCart);
+        updateCart();
+    }
+});
 
 // Update cart and display
 // Update cart and display
@@ -113,4 +122,5 @@ function showAddToCartMessage() {
 function removeFromCart(index) {
     cart.splice(index, 1);
     updateCart(); // Update cart display after removal
+    localStorage.setItem('cart', JSON.stringify(cart));
 }

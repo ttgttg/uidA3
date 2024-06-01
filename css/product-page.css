@@ -218,23 +218,6 @@ html, body {
 }
 
 
-/* Style for quantity adjustment buttons */
-.increment-quantity-btn,
-.decrement-quantity-btn {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 3px;
-    margin: 0 5px;
-}
-
-/* Hover effect */
-.increment-quantity-btn:hover,
-.decrement-quantity-btn:hover {
-    background-color: #0056b3;
-}
 
 /* Style for quantity display */
 .quantity {

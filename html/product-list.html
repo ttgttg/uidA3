@@ -111,7 +111,7 @@
     <!-- product list-->
     <div class="product-list">
         <div class="product-row">
-            <div class="product-card">
+            <div class="product-card" onclick="redirectToProductPage('product-page2.html')">
                 <img src="/img/splatoonCard.svg" alt="Product Image" class="product-image"  onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
                 <div class="product-info">
                     <h2 class="product-title">Splatoon</h2>
@@ -143,15 +143,17 @@
     </div>
 
     <div class="product-row">
-        <div class="product-card">
-            <img src="/img/cultofthelamb.svg" alt="Product Image" class="product-image" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
-            <div class="product-info">
-                <h2 class="product-title">Cult of the Lamb</h2>
-                <p class="product-description">Nintendo Switch</p>
-                <p class="product-price">$59.95</p>
-                <button class="add-to-cart-btn">Add to Cart</button>
+
+            <div class="product-card" onclick="redirectToProductPage('product-page.html')">
+                <img src="/img/cultofthelamb.svg" alt="Product Image" class="product-image" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
+                <div class="product-info">
+                    <h2 class="product-title">Cult of the Lamb</h2>
+                    <p class="product-description">Nintendo Switch</p>
+                    <p class="product-price">$59.95</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
             </div>
-        </div>
+ 
 
         <div class="product-card">
             <img src="/img/splatoonCard.svg" alt="Product Image" class="product-image">
@@ -272,5 +274,6 @@
 
     <script src="/JS/add-to-cart.js"></script>
     <script src="/JS/add-hover.js"></script>
+    <script src="/JS/product-navigation.js"></script>
 </body>
 </html>

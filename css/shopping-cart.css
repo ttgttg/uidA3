@@ -102,3 +102,75 @@ button:hover {
     align-items: center; /* Align items vertically */
     margin-left: 10px;
 }
+
+.cart-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px; /* Add margin between cart items */
+}
+
+.item-details {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.cart-item-image {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-right: 20px; /* Add margin between image and content */
+}
+
+.product-content {
+    flex: 1; /* Fill remaining space */
+    margin-left: 10px; /* Add margin to the left */
+}
+
+.quantity-buttons {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-top: 10px; /* Add margin above quantity buttons */
+}
+
+.decrement-quantity-btn,
+.increment-quantity-btn {
+    margin-right: 10px; /* Add margin between buttons */
+}
+
+.remove-item-btn {
+    margin-top: 10px; /* Add margin below quantity buttons */
+    max-width: 50px;
+}
+
+/* Style for quantity adjustment buttons */
+.increment-quantity-btn,
+.decrement-quantity-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+/* Hover effect */
+.increment-quantity-btn:hover,
+.decrement-quantity-btn:hover {
+    background-color: #0056b3;
+}
+
+.remove-item-btn {
+    margin-top: 10px; /* Add margin below quantity buttons */
+    max-width: 50px;
+    background-color: #ccc; /* Grey background color */
+    color: #666; /* Grey text color */
+    padding: 5px 10px; /* Adjust padding for button size */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.remove-item-btn:hover {
+    background-color: #aaa; /* Darker grey background color on hover */
+}
