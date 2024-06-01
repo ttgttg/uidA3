@@ -6,6 +6,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
+
 function populateOrderSummary(cart) {
     const cartItemsSummary = document.getElementById('cartItemsSummary');
     const totalItemsSummary = document.getElementById('totalItemsSummary');
@@ -18,11 +20,17 @@ function populateOrderSummary(cart) {
     cart.forEach(item => {
         const itemSummary = document.createElement('div');
         itemSummary.innerHTML = `
-            <p>${item.name} - Quantity: ${item.quantity}</p>
+            <div class="cart-item">
+                <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+                <div class="cart-item-details">
+                    <p>${item.name}</p>
+                    <p>Quantity: ${item.quantity}</p>
+                    <p>Price: $${(item.price * item.quantity).toFixed(2)}</p>
+                </div>
+            </div>
         `;
         cartItemsSummary.appendChild(itemSummary);
     });
-
     // Populate total items and total cost
     totalItemsSummary.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
     totalCostSummary.textContent = cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);

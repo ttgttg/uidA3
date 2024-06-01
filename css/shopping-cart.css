@@ -81,48 +81,36 @@ button:hover {
     background-color: #555;
 }
 
+
 .cart-item-image {
-    display: flex;
-    max-width: 150px; /* Adjust the maximum width of the image */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 200px; /* Adjust the maximum width as needed */
+    max-height: 100px; /* Adjust the maximum height as needed */
+    /* Add any other styles you need */
 }
 
 .cart-item {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #F0F0F0; /* Set the background color to white */
+    padding: 10px; /* Add padding for spacing */
+    margin-bottom: 10px; /* Add margin for spacing between items */
+    /* Add any other styles you need */
+    max-width: 500px;
+    border-radius: 10px;
     color: black;
-    z-index: 2;
-}
-
-.product-content {
-    display: flex; /* Use flexbox to arrange items in a row */
-    align-items: center; /* Align items vertically */
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .cart-item {
-    display: flex;
-    align-items: center; /* Align items vertically */
-    margin-bottom: 20px; /* Add margin between cart items */
-}
-
-.item-details {
-    display: flex;
-    align-items: center; /* Align items vertically */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    margin-bottom: 10px; /* Add margin for spacing between items */
+    /* Add any other styles you need */
 }
 
 .cart-item-image {
-    width: 100px; /* Adjust as needed */
-    height: auto;
-    margin-right: 20px; /* Add margin between image and content */
-}
-
-.product-content {
-    flex: 1; /* Fill remaining space */
-    margin-left: 10px; /* Add margin to the left */
+    width: 100px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin for spacing between image and text */
+    /* Add any other styles you need */
 }
 
 .quantity-buttons {
@@ -161,7 +149,7 @@ button:hover {
 
 .remove-item-btn {
     margin-top: 10px; /* Add margin below quantity buttons */
-    max-width: 50px;
+    max-width: 70em;
     background-color: #ccc; /* Grey background color */
     color: #666; /* Grey text color */
     padding: 5px 10px; /* Adjust padding for button size */
@@ -169,8 +157,10 @@ button:hover {
     border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Add transition for hover effect */
+    margin-left: 130px;
 }
 
 .remove-item-btn:hover {
     background-color: #aaa; /* Darker grey background color on hover */
+
 }
