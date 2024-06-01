@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/homepage/layout.css" />
     <link rel="stylesheet" href="../css/shopping_cart.css">
+    <link rel="stylesheet" href="../css/shopping-cart.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
@@ -35,29 +36,39 @@
      <div class="overlay" id="overlay"></div>
 
     <!--shopping cart-->
-    <div class="cart" id="cart">
-        <div class="header">
-            <div class="continueShopping">
-                <p>< CONTINUE SHOPPING</p>
-            </div>
-            <div class="title">
-                <h2>YOUR CART</h2>
-            </div>
+ <!--shopping cart-->
+ <div class="cart" id="cart">
+    <div class="header">
+        <div class="continueShopping">
+            <p>< CONTINUE SHOPPING</p>
         </div>
-        <div class="logo">
-            <img src="/img/gdLogoSmall.svg" alt="">
-        </div>
-        <ul id="cartItems"></ul>
-        <div class="bottomSection">
-            <div class="cartDetails">
-                <p> <span id="numberOfItems">0</span> Item(s)</p>
-                <p>Total $<span id="totalPrice">0.00</span></p>
-            </div>
-            <button id="checkoutBtn">CHECKOUT</button>
+        <div class="cart-title">
+            <h2>YOUR CART</h2>
         </div>
     </div>
+    <!--
+    <div class="logo">
+        <img src="/img/gdLogoSmall.svg" alt="">
+    </div>
+    -->
+    <div class="listCart">
 
-    <script src="/JS/shopping-cart.js"></script>
-    <script src="/JS/close-cart.js"></script>
+      
+    </div>
+    <div class="bottomSection">
+        <div class="cartDetails">
+            <p> <span id="numberOfItems">0</span> Item(s)</p>
+            <p>Total $<span id="totalPrice">0.00</span></p>
+        </div>
+        <button id="checkoutBtn">CHECKOUT</button>
+    </div>
+</div>
+
+<script src="/JS/shopping-cart.js"></script>
+<script src="/JS/close-cart.js"></script>
+<script src="/JS/add-to-cart.js"></script>
+<script src="/JS/count.js"></script>
+<script src="/JS/checkout-navigation.js"></script>
+
 </body>
 </html>
