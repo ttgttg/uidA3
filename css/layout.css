@@ -151,7 +151,6 @@ body {
   margin-top: 150px;
 }
 
-
 /*WELCOME TO GD GAMES*/
 .hero__text {
   position: relative;
@@ -205,7 +204,7 @@ div.graphic-container-inner img {
   margin-top: -15em;
 }
 
-.featured__text{
+.featured__text {
   margin-left: 10%;
 }
 .icons {
@@ -232,7 +231,7 @@ div.graphic-container-inner img {
   background-repeat: no-repeat;
 }
 
-.featured__container .products>img {
+.featured__container .products > img {
   backdrop-filter: blur(7px);
 }
 

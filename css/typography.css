@@ -45,7 +45,7 @@
   .headingh1--RussoOne {
     font-size: 1.5rem;
   }
-  .subheading--Poppins{
+  .subheading--Poppins {
     font-size: 1rem;
   }
 }
@@ -85,4 +85,19 @@
 }
 .textcontainer__body {
   padding-bottom: 1em;
+}
+
+/*VISITED LINK*/
+.link {
+  color: #fff;
+  text-decoration: none !important ;
+  cursor: pointer;
+}
+.link:hover {
+  color: #e8e0e0;
+  text-decoration: underline;
+}
+.link:visited {
+  color: #fff;
+  text-decoration: none;
 }

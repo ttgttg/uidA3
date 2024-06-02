@@ -1,100 +1,106 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Poppins;
-    color: white;
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  color: white;
 }
-
-.back{
-    padding: 20px;
-    text-decoration: underline;
-    color: white;
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+  }
 }
-
-
+.back {
+  padding: 20px;
+  text-decoration: underline;
+  color: white;
+}
 
 .checkoutContainer {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
 
-.checkoutSection, .orderSummarySection {
-    flex: 1;
+.checkoutSection,
+.orderSummarySection {
+  flex: 1;
 }
 
 /* Optional: Adjust styling for each section */
 .checkoutSection {
-    background-color: #3A2E2E;
+  background-color: #3a2e2e;
 }
 
 .orderSummarySection {
-    background-color: #271F1F;
+  background-color: #271f1f;
 }
 
-.checkoutDetails{
-
-    margin-left: 75px;
+.checkoutDetails {
+  margin-left: 75px;
 }
 
-.orderDetails{
-    margin-top: 110px;
-    margin-left: 75px;
+.orderDetails {
+  margin-top: 90px;
+  margin-left: 75px;
 }
 
 .logo {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin-top: 250px;
-    margin-bottom: 20px; /* Add margin to create space below the logo */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 250px;
+  margin-bottom: 20px; /* Add margin to create space below the logo */
 }
 
 .customer-form {
-    padding: 20px;
-    background-color: #FFEFEA;
-    color: #833016;
-    max-width: 500px;
-    
+  padding: 20px;
+  background-color: #ffefea;
+  color: #833016;
+  width: 500px;
+  min-height: 70vh;
 }
 
 .customer-form label {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .customer-form input {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .cart-item-image {
-    max-width: 200px; /* Adjust the maximum width as needed */
-    max-height: 100px; /* Adjust the maximum height as needed */
-    /* Add any other styles you need */
+  max-width: 200px; /* Adjust the maximum width as needed */
+  max-height: 100px; /* Adjust the maximum height as needed */
+  /* Add any other styles you need */
 }
 
 .cart-item {
-    background-color: #F0F0F0; /* Set the background color to white */
-    padding: 10px; /* Add padding for spacing */
-    margin-bottom: 10px; /* Add margin for spacing between items */
-    /* Add any other styles you need */
-    max-width: 500px;
-    border-radius: 10px;
-    color: black;
+  background-color: #f0f0f0; /* Set the background color to white */
+  padding: 10px; /* Add padding for spacing */
+  margin-bottom: 10px; /* Add margin for spacing between items */
+  /* Add any other styles you need */
+  max-width: 500px;
+  border-radius: 10px;
+  color: black;
 }
 
 .cart-item {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Center vertically */
-    margin-bottom: 10px; /* Add margin for spacing between items */
-    /* Add any other styles you need */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+  margin-bottom: 10px; /* Add margin for spacing between items */
+  /* Add any other styles you need */
 }
 
 .cart-item-image {
-    width: 100px; /* Set the width of the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add margin for spacing between image and text */
-    /* Add any other styles you need */
+  width: 100px; /* Set the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add margin for spacing between image and text */
+  /* Add any other styles you need */
 }
-
-
