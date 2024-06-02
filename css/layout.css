@@ -274,3 +274,8 @@ div.graphic-container-inner img {
   background-image: linear-gradient(#252430, #16151a);
   height: 10em;
 }
+
+.add-to-cart-btn {
+  font-size: 14px; /* Adjust the font size */
+  padding: 5px 10px; /* Adjust the padding */
+}
