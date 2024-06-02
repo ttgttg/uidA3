@@ -1,166 +1,160 @@
 body {
-    margin: 0;
-    font-family: Poppins;
-    color: white;
+  margin: 0;
+  font-family: Poppins;
+  color: white;
 }
 
-
-
-
 .cart {
-    position: fixed;
-    top: 0;
-    right: 0px;
-    width: 550px;
-    height: 100%;
-    background-color: #695A5A;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-    display: none; /* Initially hidden */
-transition: 0.5s;
-  }
-  
-  .cart.show {
-    display: block; /* Show the cart when 'show' class is applied */
-  }
+  position: fixed;
+  top: 0;
+  right: -550px; /*initially off-screen*/
+  width: 550px;
+  height: 100%;
+  background-color: #695a5a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: right 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); /* Add transition for the slide effect */
+}
 
+.cart.show {
+  display: block; /* Show the cart when 'show' class is applied */
+  right: 0; /* Slide in the cart when 'show' class is applied */
+}
 
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
-.cart-title{
-    margin-right: 20px;
+.cart-title {
+  margin-right: 20px;
 }
 
 .continueShopping {
-    margin-left: 20px;
-    cursor: pointer;
-    text-decoration: underline;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px; /* Add space between header and cart items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Add space between header and cart items */
 }
 
 .logo {
-    display: flex;
-    justify-content: center; /* Center the logo horizontally */
-    align-items: center;
-    margin-top: 300px;
-    z-index: 1;
-  }
-  
-  .logo img {
-    width: 300px;
-  }
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center;
+  margin-top: 300px;
+  z-index: 1;
+}
+
+.logo img {
+  width: 300px;
+}
 
 .bottomSection {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    margin-left: 56px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  margin-left: 56px;
 }
 
 button {
-    padding: 10px 150px;
-    margin-top: 10px;
-    background-color: #E83A22;
-    color: white;
-    border: none;
-    cursor: pointer;
+  padding: 10px 150px;
+  margin-top: 10px;
+  background-color: #e83a22;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #555;
-}
-
-
-.cart-item-image {
-    max-width: 200px; /* Adjust the maximum width as needed */
-    max-height: 100px; /* Adjust the maximum height as needed */
-    /* Add any other styles you need */
-}
-
-.cart-item {
-    background-color: #F0F0F0; /* Set the background color to white */
-    padding: 10px; /* Add padding for spacing */
-    margin-bottom: 10px; /* Add margin for spacing between items */
-    /* Add any other styles you need */
-    max-width: 500px;
-    border-radius: 10px;
-    color: black;
-    margin-left: 15px;
-}
-
-.cart-item {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Center vertically */
-    margin-bottom: 10px; /* Add margin for spacing between items */
-    /* Add any other styles you need */
+  background-color: #555;
 }
 
 .cart-item-image {
-    width: 100px; /* Set the width of the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add margin for spacing between image and text */
-    /* Add any other styles you need */
+  max-width: 200px; /* Adjust the maximum width as needed */
+  max-height: 100px; /* Adjust the maximum height as needed */
+  /* Add any other styles you need */
+}
+
+.cart-item {
+  background-color: #f0f0f0; /* Set the background color to white */
+  padding: 10px; /* Add padding for spacing */
+  margin-bottom: 10px; /* Add margin for spacing between items */
+  /* Add any other styles you need */
+  max-width: 500px;
+  border-radius: 10px;
+  color: black;
+  margin-left: 15px;
+}
+
+.cart-item {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+  margin-bottom: 10px; /* Add margin for spacing between items */
+  /* Add any other styles you need */
+}
+
+.cart-item-image {
+  width: 100px; /* Set the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add margin for spacing between image and text */
+  /* Add any other styles you need */
 }
 
 .quantity-buttons {
-    display: flex;
-    align-items: center; /* Align items vertically */
-    margin-top: 10px; /* Add margin above quantity buttons */
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-top: 10px; /* Add margin above quantity buttons */
 }
 
 .decrement-quantity-btn,
 .increment-quantity-btn {
-    margin-right: 10px; /* Add margin between buttons */
+  margin-right: 10px; /* Add margin between buttons */
 }
 
 .remove-item-btn {
-    margin-top: 10px; /* Add margin below quantity buttons */
-    max-width: 50px;
+  margin-top: 10px; /* Add margin below quantity buttons */
+  max-width: 50px;
 }
 
 /* Style for quantity adjustment buttons */
 .increment-quantity-btn,
 .decrement-quantity-btn {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 3px;
-    margin: 0 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 0 5px;
 }
 
 /* Hover effect */
 .increment-quantity-btn:hover,
 .decrement-quantity-btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 .remove-item-btn {
-    margin-top: 10px; /* Add margin below quantity buttons */
-    max-width: 70em;
-    background-color: #ccc; /* Grey background color */
-    color: #666; /* Grey text color */
-    padding: 5px 10px; /* Adjust padding for button size */
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Add transition for hover effect */
-    margin-left: 130px;
+  margin-top: 10px; /* Add margin below quantity buttons */
+  max-width: 70em;
+  background-color: #ccc; /* Grey background color */
+  color: #666; /* Grey text color */
+  padding: 5px 10px; /* Adjust padding for button size */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+  margin-left: 130px;
 }
 
 .remove-item-btn:hover {
-    background-color: #aaa; /* Darker grey background color on hover */
-
+  background-color: #aaa; /* Darker grey background color on hover */
 }
