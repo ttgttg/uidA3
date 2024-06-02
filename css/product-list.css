@@ -28,6 +28,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
+  min-height: 30vh;
   display: block;
   object-fit: cover;
 }
@@ -42,6 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 98%;
+  height: 0.6em;
   margin: 1% auto; /*centers text*/
   align-items: center;
 }
@@ -74,7 +76,7 @@ body {
   border: 1px solid #ccc;
   overflow: hidden;
   width: 250px; /* Set a fixed width */
-  height: 420px; /* Set a fixed height */
+  height: 400px; /* Set a fixed height */
   margin: 1em 1em 5em 3em;
   display: flex;
   flex-direction: column;
@@ -91,11 +93,6 @@ body {
 .product-info {
   padding: 1.2em;
   flex: 1;
-}
-
-.product-description {
-  color: #666;
-  margin-bottom: 10px;
 }
 
 .in-stock {
@@ -142,7 +139,7 @@ body {
 
 .details {
   display: flex;
-  align-items: center; /* Vertically center align */
+  align-items: flex-end; /* Vertically center align */
   margin-top: 10px;
 }
 
@@ -160,45 +157,52 @@ body {
     width: 100vw;
     height: auto;
   }
-
-  .herobanner__statusbar {
-    flex-direction: column;
+  .herobanner__text {
+    position: absolute;
     text-align: center;
-    margin: 1% auto;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-
-  .herobanner__statusbar p {
-    margin: 5px 0;
+  .herobanner__statusbar {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    height: 1em;
+    margin: 1% auto; /*centers text*/
+    align-items: center;
   }
 
   .filter {
-    width: 100%;
-    padding: 2%;
-    margin: 20px 0;
+    display:none;
+    width: 0%;
+    padding: 0%;
+    margin: 0 0;
     float: none;
   }
 
   .product-list {
+    width:90vw;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 20% 20% 20% 20%;
-    margin-top: 2em;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin:0;
+    padding:5vw;
     z-index: 1;
   }
 
   .product-card {
-    width: 100%;
+    width: 40vw;
     height: auto;
-    margin: 10%;
+    max-height:33vh;
+    margin: 2vw;
   }
   .product-card:last-child {
-  margin-right: 0; /* Remove margin from the last card */
-}
+    margin-right: 0; /* Remove margin from the last card */
+  }
 
   .product-info {
-    padding: 1em;
+    padding: 0.5em;
   }
 
   .details {
@@ -213,18 +217,14 @@ body {
     margin-bottom: 10px;
   }
   .details img {
-    width: 5em;
-    margin-top: 10px;
+    width: 3em;
+    height:auto;
   }
 
   .page {
-    padding: 10px;
+    padding: 0;
     background-color: #2f2f2f;
   }
 
-  .footer__content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+  
 }

@@ -4,6 +4,7 @@
   font-style: normal;
   font-size: 4rem;
   line-height: auto;
+  margin: 0.5rem;
 }
 
 .headingh1--RussoOne {
@@ -12,23 +13,33 @@
   font-style: normal;
   font-size: 3rem;
   line-height: auto;
+  margin: 0;
 }
 .heading--Poppins {
   font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-weight: 300;
   line-height: auto;
+  margin: 0;
 }
 .heading--PoppinsBold {
   font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
   line-height: auto;
+  margin: 0;
 }
 .body--Poppins {
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
   line-height: auto;
+  margin: 0;
+}
+.bodysmall--Poppins {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  line-height: auto;
+  margin: 0;
 }
 .subheading--RussoOne {
   font-family: "Russo One", sans-serif;
@@ -36,6 +47,7 @@
   font-style: normal;
   font-size: 1.3rem;
   line-height: auto;
+  margin: 0;
 }
 .subheading--Poppins {
   font-family: "Poppins", sans-serif;
@@ -43,6 +55,7 @@
   font-style: normal;
   font-size: 1.5rem;
   line-height: auto;
+  margin: 0;
 }
 @media only screen and (max-width: 600px) {
   .headingmega--RussoOne {
@@ -54,6 +67,38 @@
   .subheading--Poppins {
     font-size: 1rem;
   }
+  .bodysmall--Poppins {
+    font-size: 0.4rem;
+  }
+  .body--Poppins {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.6rem;
+    line-height: auto;
+  }
+  .product-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: black;
+  }
+  .product-price {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 0.8em;
+  }
+  .continueShopping {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .continueShopping:hover {
+    color: rgb(234, 200, 181);
+    text-decoration: underline;
+  }
+  .product-description {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 0.6em;
+}
 }
 
 /*SHOPPING CART*/
@@ -84,13 +129,25 @@
 .spaced-list li:hover {
   text-decoration: underline;
 }
-
+.product-description {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 1em;;
+}
 /*GENERAL --- GAP BETWEEN TEXT SECTIONS*/
 .textcontainer__heading {
   padding: 2em 0;
 }
 .textcontainer__body {
   padding-bottom: 1em;
+}
+@media only screen and (max-width: 600px) {
+  .textcontainer__heading {
+    padding: 0.3em 0;
+  }
+  .textcontainer__body {
+    padding-bottom: 0.4em;
+  }
 }
 
 /*VISITED LINK*/
