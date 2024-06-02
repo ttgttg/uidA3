@@ -76,3 +76,37 @@
     width: 90px; /* Set the width of the icons */
     margin: 25px; /* Add some space between the icons */
   }
+
+  @media screen and (max-width: 500px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .heading {
+        padding: 5px 30px;
+    }
+
+    fieldset img {
+        width: 100%;
+    }
+
+    .shipping, .reviews {
+        padding: 10px;
+        color: #833016;
+    }
+
+    .title {
+        padding: 20px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .icons img {
+        width: 90px;
+        margin: 25px;
+    }
+}
