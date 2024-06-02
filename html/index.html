@@ -10,80 +10,97 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/navbar.css"/>
-    <link rel="stylesheet" href="../css/search.css"/>
-    <link rel="stylesheet" href="../css/footer.css"/>
-    <link rel="stylesheet" href="../css/shopping-cart.css"/>
-    
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/search.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/shopping-cart.css" />
+    <link rel="stylesheet" href="../css/preloader.css" />
+
     <script type="text/javascript" src="../js/parallax-animation.js"></script>
-
-
-
   </head>
   <body>
     <!--nav bar -->
     <div class="nav">
       <div class="nav__icons">
-          <div div class="nav__searchcontainer">
-              <div class="nav__search">
-                  <div class="nav__search__icon"><img src="/img/searchRed.svg" style="width:50%"></img></div>
-                  <div class="nav__search__input">
-                  <input type="text" placeholder="Search" id="mySearch" />
-                  </div>
-                  <span class="nav__search__clear"></span>
-              </div>
-              <script type="text/javascript" src="../js/searchbar.js"></script>
+        <div div class="nav__searchcontainer">
+          <div class="nav__search">
+            <div class="nav__search__icon">
+              <img src="/img/searchRed.svg" style="width: 50%" />
+            </div>
+            <div class="nav__search__input">
+              <input type="text" placeholder="Search" id="mySearch" />
+            </div>
+            <span class="nav__search__clear"></span>
           </div>
-          <img class="nav__logo" src="../img/GDmainlogo.svg" alt="GDmainlogo" class="layer" />
-          <img class="nav__profile" src="../img/profile.svg" alt="profile icon" class="layer" />
-          <img class="nav__cart" src="../img/shoppingCart.svg" alt="cart icon" class="layer" id="cartIcon">
+          <script type="text/javascript" src="../js/searchbar.js"></script>
+        </div>
+         <a href="../html/index.html"><img
+          class="nav__logo"
+          src="../img/GDmainlogo.svg"
+          alt="GDmainlogo"
+          class="layer"
+        /></a>
+        
+        <img
+          class="nav__profile"
+          src="../img/profile.svg"
+          alt="profile icon"
+          class="layer"
+        />
+        <img
+          class="nav__cart"
+          src="../img/shoppingCart.svg"
+          alt="cart icon"
+          class="layer"
+          id="cartIcon"
+        />
       </div>
-      <img class="nav__background" src="../img/navbar2.svg" alt="navbar background" class="layer" />
-  </div>
+      <img
+        class="nav__background"
+        src="../img/navbar2.svg"
+        alt="navbar background"
+        class="layer"
+      />
+    </div>
 
-   <!--overlay-->
-   <div class="overlay" id="overlay"></div>
+    <!--overlay-->
+    <div class="overlay" id="overlay"></div>
 
-  <!--shopping cart-->
-<!--shopping cart-->
-<div class="cart" id="cart">
-  <div class="header">
-      <div class="continueShopping">
+    <!--shopping cart-->
+    <!--shopping cart-->
+    <div class="cart" id="cart">
+      <div class="header">
+        <div class="continueShopping">
           <p>< CONTINUE SHOPPING</p>
-      </div>
-      <div class="cart-title">
+        </div>
+        <div class="cart-title">
           <h2>YOUR CART</h2>
+        </div>
       </div>
-  </div>
-  <!--
+      <!--
   <div class="logo">
       <img src="/img/gdLogoSmall.svg" alt="">
   </div>
   -->
-  <div class="listCart">
-
-    
-  </div>
-  <div class="bottomSection">
-      <div class="cartDetails">
-          <p> <span id="numberOfItems">0</span> Item(s)</p>
+      <div class="listCart"></div>
+      <div class="bottomSection">
+        <div class="cartDetails">
+          <p><span id="numberOfItems">0</span> Item(s)</p>
           <p>Total $<span id="totalPrice">0.00</span></p>
+        </div>
+        <button id="checkoutBtn">CHECKOUT</button>
       </div>
-      <button id="checkoutBtn">CHECKOUT</button>
-  </div>
-</div>
-
-<script src="/JS/shopping-cart.js"></script>
-<script src="/JS/close-cart.js"></script>
-<script src="/JS/add-to-cart.js"></script>
-<script src="/JS/count.js"></script>
-<script src="/JS/checkout-navigation.js"></script>
-
-<!--home page-->
-
-    <div class="homepage">
-
     </div>
+
+    <script src="/JS/shopping-cart.js"></script>
+    <script src="/JS/close-cart.js"></script>
+    <script src="/JS/add-to-cart.js"></script>
+    <script src="/JS/count.js"></script>
+    <script src="/JS/checkout-navigation.js"></script>
+
+    <!--home page-->
+
+    <div class="homepage"></div>
     <!--trying another way
     <div class="carousel">
         <button onclick="function()">View Item</button>
@@ -94,7 +111,6 @@
         </ol>
     </div>
     -->
-
 
     <!--using radio buttons as slider-->
     <div class="slideshow">
@@ -250,12 +266,9 @@
       </div>
     </div>
 
-
-    
     <div class="footer">
       <img class="footer__logo" src="../img/GDbiglogo.svg" alt="" />
       <div class="footer__content">
-        
         <div class="footer__left">
           <div class="footer__menu">
             <h2 class="footer__menu__title--left">
@@ -263,11 +276,15 @@
               offers and game news!
             </h2>
             <div class="footer__subscribe">
-              <input class="footer__subscribe__input" type="text" placeholder="Your Email"  />
+              <input
+                class="footer__subscribe__input"
+                type="text"
+                placeholder="Your Email"
+              />
               <button class="footer__subscribe__button">Subscribe!</button>
             </div>
             <div class="footer__socialmedia">
-              <img src="/img/socialMedia.svg" alt="">
+              <img src="/img/socialMedia.svg" alt="" />
             </div>
           </div>
         </div>
@@ -292,24 +309,30 @@
 
         <div class="footer__right">
           <div class="footer__menu">
-              <div class="footer__menu__title">
-                  <h1>Payment Methods</h1>
-                  <img class="footer__right__img" src="/img/paymentMethods.svg" alt="">
-              </div>
+            <div class="footer__menu__title">
+              <h1>Payment Methods</h1>
+              <img
+                class="footer__right__img"
+                src="/img/paymentMethods.svg"
+                alt=""
+              />
+            </div>
           </div>
           <div class="footer__menu">
             <div class="footer__menu__title">
-                  <h1>Buy Now, Pay Later</h1>
-                  <img class="footer__right__img" src="/img/payOptions.svg" alt="">
-              </div>
+              <h1>Buy Now, Pay Later</h1>
+              <img
+                class="footer__right__img"
+                src="/img/payOptions.svg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-
       </div>
     </div>
 
-
-
-    <script src="/JS/indextest.js"></script>
+    <div id="preloader"></div>
+    <script src="/js/preloader.js"></script>
   </body>
 </html>
