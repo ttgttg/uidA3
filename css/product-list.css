@@ -3,9 +3,11 @@ body{
 }
 
 
-.NintendoPL{
-	background-position: 50% -26px;
-
+.NintendoPL__background{
+    width:100vw;
+}
+.NintendoPL__background{
+    object-fit: cover;
 }
 
 #fullwidth-image {
