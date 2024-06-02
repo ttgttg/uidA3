@@ -10,6 +10,15 @@
     background: linear-gradient(to top, #9A3426, #16151A);
     }
   
+    @media only screen and (max-width: 600px) {
+        .footer{
+            
+        }
+        .footer__logo
+    }
+
+
+
     .footer__logo {
     margin: 4em; /* Adjust the margin as needed */
     }  
