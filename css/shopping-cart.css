@@ -163,7 +163,7 @@ button:hover {
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Add transition for hover effect */
-  margin-left: 130px;
+  margin-left: 0px;
 }
 
 .remove-item-btn:hover {

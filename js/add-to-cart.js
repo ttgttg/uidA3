@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function increaseQuantity(index) {
         cart[index].quantity++;
         updateCart();
+        localStorage.setItem('cart', JSON.stringify(cart)); // Save to cart memory
     }
 
     // Decrease quantity of an item
@@ -104,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (cart[index].quantity > 1) {
             cart[index].quantity--;
             updateCart();
+            localStorage.setItem('cart', JSON.stringify(cart)); // Save to cart memory
         }
     }
 
@@ -112,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const message = document.getElementById('addToCartMessage');
         message.style.display = 'block';
         setTimeout(() => {
-            message.style.display = 'none';
+            message.style.display = 'none'; 
         }, 2000);
     }
 
@@ -120,6 +122,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function removeFromCart(index) {
         cart.splice(index, 1);
         updateCart(); // Update cart display after removal
-        localStorage.setItem('cart', JSON.stringify(cart));
+        localStorage.setItem('cart', JSON.stringify(cart)); // Save to cart memory
     }
 });

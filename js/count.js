@@ -4,16 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const quantityInput = document.querySelector('.quantity-input');
 
     decreaseBtn.addEventListener('click', function() {
-        // Decrease the input value by 1, but don't go below the minimum value
         if (parseInt(quantityInput.value) > quantityInput.min) {
             quantityInput.value = parseInt(quantityInput.value) - 1;
+            console.log('hello');
         }
     });
 
     increaseBtn.addEventListener('click', function() {
-        // Increase the input value by 1, but don't go above the maximum value
         if (parseInt(quantityInput.value) < quantityInput.max || !quantityInput.hasAttribute('max')) {
             quantityInput.value = parseInt(quantityInput.value) + 1;
+            console.log('hello');
         }
     });
 
