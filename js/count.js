@@ -16,4 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
             quantityInput.value = parseInt(quantityInput.value) + 1;
         }
     });
+
+    // Prevent default behavior of the buttons, such as form submission
+    decreaseBtn.addEventListener('mousedown', function(event) {
+        event.preventDefault();
+    });
+
+    increaseBtn.addEventListener('mousedown', function(event) {
+        event.preventDefault();
+    });
 });
