@@ -27,8 +27,6 @@
 
   form {
     background-color: #FFEFEA;
-
-
     border-radius: 12px; /* Top-left and top-right corners */
   }
   
@@ -81,15 +79,13 @@ button[type="submit"]:hover {
 
 .itemSummary{
   background-color: white;
-  width: 400px;
+  width: 300px;
   padding: 20px;
   border-radius: 5px;
   color: black;
   font-family: Poppins;
-  position: fixed;
-  bottom: 40px;
+  position: relative;
   font-weight: bold; /* Make all h1 headings bold inside .itemSummary */
-  margin-left: 100px;
-
+  margin-left: 0px;
 
 }
