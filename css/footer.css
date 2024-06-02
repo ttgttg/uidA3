@@ -1,98 +1,94 @@
 .footer {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:100%;
-    justify-content:space-evenly;
-    font-family: 'Poppins';
-    color: white;
-    font-size: 0.8rem;
-    background: linear-gradient(to top, #9A3426, #16151A);
-    }
-  
-    @media only screen and (max-width: 600px) {
-        .footer{
-            
-        }
-        .footer__logo
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  font-family: "Poppins";
+  color: white;
+  font-size: 0.8rem;
+  background: linear-gradient(to top, #9a3426, #16151a);
+}
 
+@media only screen and (max-width: 600px) {
+  .footer {
+  }
+}
 
+.footer__logo {
+  margin: 4em; /* Adjust the margin as needed */
+}
 
-    .footer__logo {
-    margin: 4em; /* Adjust the margin as needed */
-    }  
-  
-    .footer__content{
-      width:100%;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start; /* Center items horizontally */
-      text-align: center; /* Center text horizontally */
-    }
-      
-      .footer__left,
-      .footer__center,
-      .footer__right {
-        flex: 1; /* Allow the elements to grow and shrink equally */
-        text-align: center; /* Center text horizontally */
-      }
-    
-        .footer__menu{
-        margin-bottom: 5em;
-        list-style-type: none; /* Remove the default bullets */
-        }
-        
-        .footer__item{
-            margin-bottom: 1.2em;
-            cursor: pointer;
-        }
-        .footer__item:hover{
-            text-decoration: underline;
-        }  
-    
-        .footer__menu__title{
-            cursor: default;
-        }
-    
-        .footer__menu__title--left {
-            margin:1em 2em;
-            cursor:default;
-        }
-    
-        .footer__subscribe__button{
-            background-color: #E83A22;
-            color: white; 
-            font-size: 1rem; 
-            padding: 0.5em; 
-            border: none; 
-            border-radius: 0.25em; 
-            margin-left: 0.4em;
-        }
-    
-        .footer__subscribe__button:hover {
-            background-color: rgb(255, 255, 255);
-            color:#E83A22;
-            cursor:pointer;
-        }
-    
-        .footer__subscribe__input {
-            background-color: white; 
-            width:15em;
-            font-size: 1rem; 
-            padding: 0.5em; 
-            margin-top:1em;
-            border: none; 
-            border-radius: 0.25em; 
-        }
-        
-        .footer__socialmedia img{
-            max-width:25vw;
-            margin: 5em auto;
-            cursor:pointer;
-        }
-    
-        
-        .footer__right__img{
-            cursor:pointer;
-        }
+.footer__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Center items horizontally */
+  text-align: center; /* Center text horizontally */
+}
+
+.footer__left,
+.footer__center,
+.footer__right {
+  flex: 1; /* Allow the elements to grow and shrink equally */
+  text-align: center; /* Center text horizontally */
+}
+
+.footer__menu {
+  margin-bottom: 5em;
+  list-style-type: none; /* Remove the default bullets */
+}
+
+.footer__item {
+  margin-bottom: 1.2em;
+  cursor: pointer;
+}
+.footer__item:hover {
+  text-decoration: underline;
+}
+
+.footer__menu__title {
+  cursor: default;
+}
+
+.footer__menu__title--left {
+  margin: 1em 2em;
+  cursor: default;
+  line-height: 1.3em;
+}
+
+.footer__subscribe__button {
+  background-color: #e83a22;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.25em;
+  margin-left: 0.4em;
+}
+
+.footer__subscribe__button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #e83a22;
+  cursor: pointer;
+}
+
+.footer__subscribe__input {
+  background-color: white;
+  width: 15em;
+  font-size: 1rem;
+  padding: 0.5em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 0.25em;
+}
+
+.footer__socialmedia img {
+  max-width: 25vw;
+  margin: 5em auto;
+  cursor: pointer;
+}
+
+.footer__right__img {
+  cursor: pointer;
+}
