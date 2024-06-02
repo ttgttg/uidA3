@@ -10,10 +10,6 @@
   background: linear-gradient( #16151a,#321B1D,#9a3426);
 }
 
-@media only screen and (max-width: 600px) {
-  .footer {
-  }
-}
 
 .footer__logo {
   margin: 4em; /* Adjust the margin as needed */
@@ -91,4 +87,55 @@
 
 .footer__right__img {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    align-items: center;
+  }
+
+  .footer__logo {
+    margin:0%;
+    width:100%;
+    position:relative;
+    padding:2em 0;
+}
+
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__left,
+  .footer__center,
+  .footer__right {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer__menu__title--left {
+    margin: 1em;
+    text-align: center;
+  }
+
+  .footer__subscribe__input {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .footer__subscribe__button {
+    width: 80%;
+  }
+
+  .footer__socialmedia img {
+    max-width: 50%;
+    margin: 20px auto;
+  }
+
+  .footer__right__img {
+    max-width: 80%;
+    margin: 20px auto;
+  }
 }
