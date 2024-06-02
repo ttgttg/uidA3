@@ -16,7 +16,7 @@
   font-size: 1.3rem;
   line-height: normal;
 }
-.subheading--RussoOne{
+.subheading--RussoOne {
   font-family: "Russo One", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -24,22 +24,39 @@
   line-height: normal;
 }
 
+/*SHOPPING CART*/
 .product-title {
-    font-size: 1.1em;
-    margin-bottom: 5px;
-    color: black;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: black;
 }
 .product-price {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+.continueShopping {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.continueShopping:hover {
+  color: rgb(234, 200, 181);
+  text-decoration: underline;
 }
 
+/*PRODUCT LIST*/
+.spaced-list li {
+  margin-bottom: 25px; /* Add margin between list items */
+  cursor: pointer;
+}
+.spaced-list li:hover {
+  text-decoration: underline;
+}
 
 /*GENERAL --- GAP BETWEEN TEXT SECTIONS*/
-.textcontainer__heading{
-  padding:2em 0;
+.textcontainer__heading {
+  padding: 2em 0;
 }
-.textcontainer__body{
+.textcontainer__body {
   padding-bottom: 1em;
 }

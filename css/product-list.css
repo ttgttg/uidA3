@@ -45,17 +45,6 @@ body{
     margin-bottom: 1em;
 }
 
-.spaced-list li {
-    margin-bottom: 25px; /* Add margin between list items */
-    cursor: pointer;
-}
-.spaced-list li:hover{
-    text-decoration: underline;
-}
-
-
-
-
 
 
 
