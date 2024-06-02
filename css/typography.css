@@ -3,15 +3,26 @@
   font-weight: 500;
   font-style: normal;
   font-size: 3rem;
+  line-height: normal;
 }
-
-.body--Poppins {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.3rem;
-}
-
 .heading--Poppins {
   font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-weight: 300;
+  line-height: normal;
+}
+.body--Poppins {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  line-height: normal;
+}
+
+
+
+/*GENERAL --- GAP BETWEEN TEXT SECTIONS*/
+.textcontainer__heading{
+  padding:2em 0;
+}
+.textcontainer__body{
+  padding-bottom: 1em;
 }
