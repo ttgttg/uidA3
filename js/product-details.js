@@ -1,4 +1,4 @@
-// JavaScript for Step Headings - flip through
+// JavaScript for flip through product details (use logic for multi-step form)
 const headings = document.querySelectorAll('.heading');
 const fieldsets = document.querySelectorAll('fieldset');
 

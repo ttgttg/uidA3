@@ -15,7 +15,7 @@
   .heading {
     font-weight: bold;
     cursor: pointer;
-    padding: 20px 46.2px;
+    padding: 20px 44.5px;
     background-color: #ddd;
     color: #515151;
     border-radius: 12px 12px 0 0; /* Top-left and top-right corners */
@@ -50,14 +50,13 @@
   }
   
   .shipping {
-    text-align: center;
+
     padding: 10px;
     color: #833016;
   }
   
   .reviews {
-    text-align: center;
-    padding: 20px;
+
     color: #833016;
   }
   
@@ -68,7 +67,7 @@
   .icons {
     display: flex; /* Use flexbox */
     justify-content: center; /* Center the icons horizontally */
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
   }
   
