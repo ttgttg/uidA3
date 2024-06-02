@@ -1,24 +1,39 @@
-body{
-    font-family: Poppins;
+body{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  scroll-behavior: smooth; 
+  background-color: #16151A;
+  width:100vw; 
+  height:100vh;
+  max-width:100%;
 }
 
-
+/*PRODUCT LIST --- BANNER + MINI STATUS BAR*/
+.herobanner{
+    width:100%;
+    background-color:#2f2f2f;
+    padding-bottom: 0.1%;
+}
 .NintendoPL__background{
-    width:100vw;
+    width:100%;
 }
-.NintendoPL__background{
-    object-fit: cover;
-}
-
 #fullwidth-image {
     width: 100%;
     height: auto; /* Automatically adjust height to maintain aspect ratio */
     display: block; /* Ensures the image behaves as a block element */
 }
+.herobanner__statusbar {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin:1% auto;/*centers text*/
+    align-items: center;
+}
 
 
 
-
+/*PRODUCT LIST --- FILTER*/
 .filter{
 	background-color: #000000; 
 	padding: 50px;
@@ -124,13 +139,6 @@ body{
     width: 100%;
     text-align: center; /* Optional: Center the content horizontally */
     background-color: #2f2f2f;
-}
-
-.headings {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
 }
 
 .product-card {
