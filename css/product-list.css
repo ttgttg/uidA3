@@ -50,6 +50,7 @@ body {
 .filter {
   float: left; /* Ensure the filter stays on the left side */
   width: 20%; /* Adjust as needed */
+  height: 100vh;
   padding: 3%;
   background-color: #2f2f2f;
   margin-top: 40px; /* Add margin to the top */
@@ -62,10 +63,11 @@ body {
 
 /*PRODUCT LIST -- PRODUCTS*/
 .product-list {
-  display: flex; /* Use flexbox */
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30% 30%;
   margin-top: 2em;
+  margin-left: 26em;
   z-index: 1;
 }
 .product-card {
@@ -73,7 +75,7 @@ body {
   overflow: hidden;
   width: 250px; /* Set a fixed width */
   height: 420px; /* Set a fixed height */
-  margin: 1em 1em 2em 1em; /* Adjust margin for spacing */
+  margin: 1em 1em 5em 3em;
   display: flex;
   flex-direction: column;
   background-color: #ffefea;
@@ -138,7 +140,6 @@ body {
   visibility: visible;
 }
 
-
 .details {
   display: flex;
   align-items: center; /* Vertically center align */
@@ -152,4 +153,78 @@ body {
 .details img {
   width: 200px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: auto;
+  }
+
+  .herobanner__statusbar {
+    flex-direction: column;
+    text-align: center;
+    margin: 1% auto;
+  }
+
+  .herobanner__statusbar p {
+    margin: 5px 0;
+  }
+
+  .filter {
+    width: 100%;
+    padding: 2%;
+    margin: 20px 0;
+    float: none;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    margin-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 1;
+  }
+
+  .product-card {
+    width: 100%;
+    height: auto;
+    margin: 10%;
+  }
+  .product-card:last-child {
+  margin-right: 0; /* Remove margin from the last card */
+}
+
+  .product-info {
+    padding: 1em;
+  }
+
+  .details {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .product-price {
+    font-size: 1.5em;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .details img {
+    width: 5em;
+    margin-top: 10px;
+  }
+
+  .page {
+    padding: 10px;
+    background-color: #2f2f2f;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }

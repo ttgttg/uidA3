@@ -1,326 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GD Games - Search Result</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap");
     </style>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="stylesheet" href="../css/product-list.css">
-    <link rel="stylesheet" href="../css/navBar.css">
-    <link rel="stylesheet" href="../css//shopping-cart.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/typography.css">
-</head>
-<body>
-   <!--nav bar -->
-   <div class="nav">
-    <div class="nav__icons">
+    <link rel="stylesheet" href="../css/product-list.css" />
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="stylesheet" href="../css//shopping-cart.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
+  </head>
+  <body>
+    <!--nav bar -->
+    <div class="nav">
+      <div class="nav__icons">
         <div div class="nav__searchcontainer">
-            <div class="nav__search">
-                <div class="nav__search__icon"><img src="/img/searchRed.svg" style="width:50%"></img></div>
-                <div class="nav__search__input">
-                <input type="text" placeholder="Search" id="mySearch" />
-                </div>
-                <span class="nav__search__clear"></span>
+          <div class="nav__search">
+            <div class="nav__search__icon">
+              <img src="/img/searchRed.svg" style="width: 50%" />
             </div>
-            <script type="text/javascript" src="../js/searchbar.js"></script>
+            <div class="nav__search__input">
+              <input type="text" placeholder="Search" id="mySearch" />
+            </div>
+            <span class="nav__search__clear"></span>
+          </div>
+          <script type="text/javascript" src="../js/searchbar.js"></script>
         </div>
-        <a href="../html/index.html"><img class="nav__logo" src="../img/GDmainlogo.svg" alt="GDmainlogo" class="layer" /></a>
-        <img class="nav__profile" src="../img/profile.svg" alt="profile icon" class="layer" />
-        <img class="nav__cart" src="../img/shoppingCart.svg" alt="cart icon" class="layer" id="cartIcon">
+        <a href="../html/index.html"
+          ><img
+            class="nav__logo"
+            src="../img/GDmainlogo.svg"
+            alt="GDmainlogo"
+            class="layer"
+        /></a>
+        <img
+          class="nav__profile"
+          src="../img/profile.svg"
+          alt="profile icon"
+          class="layer"
+        />
+        <img
+          class="nav__cart"
+          src="../img/shoppingCart.svg"
+          alt="cart icon"
+          class="layer"
+          id="cartIcon"
+        />
+      </div>
+      <img
+        class="nav__background"
+        src="../img/navbar2.svg"
+        alt="navbar background"
+        class="layer"
+      />
     </div>
-    <img class="nav__background" src="../img/navbar2.svg" alt="navbar background" class="layer" />
-</div>
 
-     <!--overlay-->
-     <div class="overlay" id="overlay"></div>
+    <!--overlay-->
+    <div class="overlay" id="overlay"></div>
 
     <!--shopping cart-->
- <!--shopping cart-->
- <div class="cart" id="cart">
-    <div class="header">
+    <!--shopping cart-->
+    <div class="cart" id="cart">
+      <div class="header">
         <div class="continueShopping">
-            <p>< CONTINUE SHOPPING</p>
+          <p>< CONTINUE SHOPPING</p>
         </div>
         <div class="cart-title">
-            <h2>YOUR CART</h2>
+          <h2>YOUR CART</h2>
         </div>
-    </div>
-    <!--
+      </div>
+      <!--
     <div class="logo">
         <img src="/img/gdLogoSmall.svg" alt="">
     </div>
     -->
-    <div class="listCart">
-
-      
-    </div>
-    <div class="bottomSection">
+      <div class="listCart"></div>
+      <div class="bottomSection">
         <div class="cartDetails">
-            <p> <span id="numberOfItems">0</span> Item(s)</p>
-            <p>Total $<span id="totalPrice">0.00</span></p>
+          <p><span id="numberOfItems">0</span> Item(s)</p>
+          <p>Total $<span id="totalPrice">0.00</span></p>
         </div>
         <button id="checkoutBtn">CHECKOUT</button>
+      </div>
     </div>
-</div>
 
-<script src="/JS/shopping-cart.js"></script>
-<script src="/JS/close-cart.js"></script>
-<script src="/JS/add-to-cart.js"></script>
-<script src="/JS/count.js"></script>
-<script src="/JS/checkout-navigation.js"></script>
-
+    <script src="/JS/shopping-cart.js"></script>
+    <script src="/JS/close-cart.js"></script>
+    <script src="/JS/add-to-cart.js"></script>
+    <script src="/JS/count.js"></script>
+    <script src="/JS/checkout-navigation.js"></script>
 
     <!--header-->
     <header class="herobanner">
-		<div class="NintendoPL">
-            <div class="NintendoPL__background">
-                <img src="../img/Nintendo-Switch-Mario-Edition.png">
-            </div>
-            <div class="herobanner__text">
-                <div class="textcontainer__heading"><h1 class="headingmega--RussoOne">Nintendo Switch</h1></div>
-                <p class="subheading--Poppins">Explore GD Games' extensive Nintendo Switch game collection at unbeatable prices.</p>
-            </div>
-		</div><!--headings-->
-        <div class="herobanner__statusbar">
-            <p>  FILTER</p>
-            <p>SHOWING 1 - 9 OF 22 ITEMS</p>
-            <p>SORT BY  </p>
+      <div class="NintendoPL">
+        <div class="NintendoPL__background">
+          <img src="../img/Nintendo-Switch-Mario-Edition.png" />
         </div>
+        <div class="herobanner__text">
+          <div class="textcontainer__heading">
+            <h1 class="headingmega--RussoOne">Nintendo Switch</h1>
+          </div>
+          <p class="subheading--Poppins">
+            Explore GD Games' extensive Nintendo Switch game collection at
+            unbeatable prices.
+          </p>
+        </div>
+      </div>
+      <!--headings-->
+      <div class="herobanner__statusbar">
+        <p>FILTER</p>
+        <p>SHOWING 1 - 9 OF 22 ITEMS</p>
+        <p>SORT BY</p>
+      </div>
     </header>
-
-        
 
     <!-- filter -->
     <div class="filter">
-        <label class="body--Poppins">FILTER BY > GENRE</label>
-        <ul class="spaced-list">
-            <li>Action</li>
-            <li>Adventure</li>
-            <li>Arcade</li>
-            <li>Eductational</li>
-            <li>Family</li>
-            <li>Fighting</li>
-            <li>Horror</li>
-            <li>Indie</li>
-            <li>Music</li>
-            <li>Party</li>
-            <li>Music</li>
-            <li>Party</li>
-            <li>Platformer</li>
-            <li>Puzzle</li>
-            <li>Racing</li>
-            <li>Role Playing</li>
-            <li>Shooter</li>
-            <li>Simulation</li>
-        </ul>
+      <label class="body--Poppins">FILTER BY > GENRE</label>
+      <ul class="spaced-list">
+        <li>Action</li>
+        <li>Adventure</li>
+        <li>Arcade</li>
+        <li>Eductational</li>
+        <li>Family</li>
+        <li>Fighting</li>
+        <li>Horror</li>
+        <li>Indie</li>
+        <li>Music</li>
+        <li>Party</li>
+        <li>Music</li>
+        <li>Party</li>
+        <li>Platformer</li>
+        <li>Puzzle</li>
+        <li>Racing</li>
+        <li>Role Playing</li>
+        <li>Shooter</li>
+        <li>Simulation</li>
+      </ul>
     </div>
 
-
-    
     <!-- product list-->
     <div class="product-list">
-        <div class="product-row">
-            <div class="product-card" onclick="redirectToProductPage('product-page2.html')">
-                <img src="/img/splatoonCard.svg" alt="Product Image" class="product-image"  onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
-                <div class="product-info">
-                    <h2 class="product-title subheading--RussoOne">Splatoon 3</h2>
-                    <p class="product-description">Nintendo Switch</p>
-                    <div class="details">
-                        <p class="product-price">$65.95</p>
-                        <img src="/img/in-stock.svg" alt="">
-                    </div>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </div>
-            </div>
-            
-
-        <div class="product-card"  onclick="redirectToProductPage('product-page2.html')">
-            <img src="/img/saintkotarCard.svg" alt="Product Image" class="product-image" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
-            <div class="product-info">
-                <h2 class="product-title subheading--RussoOne">Saint Kotar</h2>
-                <p class="product-description">Nintendo Switch</p>
-                <div class="details">
-                    <p class="product-price">$49.00</p>
-                    <img src="/img/in-stock.svg" alt="">
-                </div>
-                <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
+      <div
+        class="product-card"
+        onclick="redirectToProductPage('product-page2.html')"
+      >
+        <img
+          src="/img/splatoonCard.svg"
+          alt="Product Image"
+          class="product-image"
+          onmouseover="showAddToCartButton(this)"
+          onmouseout="hideAddToCartButton(this)"
+        />
+        <div class="product-info">
+          <h2 class="product-title subheading--RussoOne">Splatoon 3</h2>
+          <p class="product-description">Nintendo Switch</p>
+          <div class="details">
+            <p class="product-price">$65.95</p>
+            <img src="/img/in-stock.svg" alt="" />
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
         </div>
+      </div>
 
-        <div class="product-card"  onclick="redirectToProductPage('product-page2.html')">
-            <img src="/img/crystarCard.svg" alt="Product Image" class="product-image" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
-            <div class="product-info">
-                <h2 class="product-title subheading--RussoOne">Crystar</h2>
-                <p class="product-description">Ninendo Switch</p>
-                <div class="details">
-                    <p class="product-price">$64.00</p>
-                    <img src="/img/in-stock.svg" alt="">
-                </div>
-                <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
+      <div
+        class="product-card"
+        onclick="redirectToProductPage('product-page2.html')"
+      >
+        <img
+          src="/img/saintkotarCard.svg"
+          alt="Product Image"
+          class="product-image"
+          onmouseover="showAddToCartButton(this)"
+          onmouseout="hideAddToCartButton(this)"
+        />
+        <div class="product-info">
+          <h2 class="product-title subheading--RussoOne">Saint Kotar</h2>
+          <p class="product-description">Nintendo Switch</p>
+          <div class="details">
+            <p class="product-price">$49.00</p>
+            <img src="/img/in-stock.svg" alt="" />
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
         </div>
-    </div>
+      </div>
 
-    <div class="product-row">
-
-            <div class="product-card" onclick="redirectToProductPage('product-page.html')">
-                <img src="/img/cultofthelamb.svg" alt="Product Image" class="product-image" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
-                <div class="product-info">
-                    <h2 class="product-title subheading--RussoOne">Cult of the Lamb</h2>
-                    <p class="product-description">Nintendo Switch</p>
-                    <div class="details">
-                        <p class="product-price">$59.95</p>
-                        <img src="/img/in-stock.svg" alt="">
-                    </div>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </div>
-            </div>
- 
-
-        <div class="product-card" onclick="redirectToProductPage('product-page.html')">
-            <img src="/img/helloneighbour2Card.svg" alt="Product Image" class="product-image" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
-            <div class="product-info">
-                <h2 class="product-title subheading--RussoOne">Hello Neighbour 2</h2>
-                <p class="product-description">Nintendo Switch</p>
-                <div class="details">
-                    <p class="product-price">$49.00</p>
-                    <img src="/img/in-stock.svg" alt="">
-                </div>
-                <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
+      <div
+        class="product-card"
+        onclick="redirectToProductPage('product-page2.html')"
+      >
+        <img
+          src="/img/crystarCard.svg"
+          alt="Product Image"
+          class="product-image"
+          onmouseover="showAddToCartButton(this)"
+          onmouseout="hideAddToCartButton(this)"
+        />
+        <div class="product-info">
+          <h2 class="product-title subheading--RussoOne">Crystar</h2>
+          <p class="product-description">Ninendo Switch</p>
+          <div class="details">
+            <p class="product-price">$64.00</p>
+            <img src="/img/in-stock.svg" alt="" />
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
         </div>
-
-        <div class="product-card"onclick="redirectToProductPage('product-page.html')">
-            <img src="/img/fitnessboxingCard.svg" alt="Product Image" class="product-image" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
-            <div class="product-info">
-                <h2 class="product-title subheading--RussoOne">Fitness Boxing</h2>
-                <p class="product-description">Nintendo Switch</p>
-                <div class="details">
-                    <p class="product-price">$59.00</p>
-                    <img src="/img/in-stock.svg" alt="">
-                </div>
-                <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
+      </div>
+      <div
+        class="product-card"
+        onclick="redirectToProductPage('product-page.html')"
+      >
+        <img
+          src="/img/cultofthelamb.svg"
+          alt="Product Image"
+          class="product-image"
+          onmouseover="showAddToCartButton(this)"
+          onmouseout="hideAddToCartButton(this)"
+        />
+        <div class="product-info">
+          <h2 class="product-title subheading--RussoOne">Cult of the Lamb</h2>
+          <p class="product-description">Nintendo Switch</p>
+          <div class="details">
+            <p class="product-price">$59.95</p>
+            <img src="/img/in-stock.svg" alt="" />
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
         </div>
-    </div>
+      </div>
 
-    <div class="product-row">
-        <div class="product-card" onclick="redirectToProductPage('product-page3.html')">
-            <img src="/img/ittakestwoCard.svg" alt="Product Image" class="product-image" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
-            <div class="product-info">
-                <h2 class="product-title subheading--RussoOne">It Takes Two</h2>
-                <p class="product-description">Nintendo Switch</p>
-                <div class="details">
-                    <p class="product-price">$29.95</p>
-                    <img src="/img/in-stock.svg" alt="">
-                </div>
-                <button class="add-to-cart-btn">Add to Cart</button>
-                <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
+      <div
+        class="product-card"
+        onclick="redirectToProductPage('product-page.html')"
+      >
+        <img
+          src="/img/helloneighbour2Card.svg"
+          alt="Product Image"
+          class="product-image"
+          onmouseover="showAddToCartButton(this)"
+          onmouseout="hideAddToCartButton(this)"
+        />
+        <div class="product-info">
+          <h2 class="product-title subheading--RussoOne">Hello Neighbour 2</h2>
+          <p class="product-description">Nintendo Switch</p>
+          <div class="details">
+            <p class="product-price">$49.00</p>
+            <img src="/img/in-stock.svg" alt="" />
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
         </div>
+      </div>
 
-        <div class="product-card" onclick="redirectToProductPage('product-page3.html')">
-            <img src="/img/sakunaCard.svg" alt="Product Image" class="product-image" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
-            <div class="product-info">
-                <h2 class="product-title subheading--RussoOne">Sakuna: of Rice and Ruin</h2>
-                <p class="product-description">Nintendo Switch</p>
-                <div class="details">
-                    <p class="product-price">$49.00</p>
-                    <img src="/img/in-stock.svg" alt="">
-                </div>
-                <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
+      <div
+        class="product-card"
+        onclick="redirectToProductPage('product-page.html')"
+      >
+        <img
+          src="/img/fitnessboxingCard.svg"
+          alt="Product Image"
+          class="product-image"
+          onmouseover="showAddToCartButton(this)"
+          onmouseout="hideAddToCartButton(this)"
+        />
+        <div class="product-info">
+          <h2 class="product-title subheading--RussoOne">Fitness Boxing</h2>
+          <p class="product-description">Nintendo Switch</p>
+          <div class="details">
+            <p class="product-price">$59.00</p>
+            <img src="/img/in-stock.svg" alt="" />
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
         </div>
+      </div>
 
-        <div class="product-card" onclick="redirectToProductPage('product-page3.html')">
-            <img src="/img/fireemblemCard.svg" alt="Product Image" class="product-image" onmouseover="showAddToCartButton(this)" onmouseout="hideAddToCartButton(this)">
-            <div class="product-info">
-                <h2 class="product-title subheading--RussoOne">Fire Emblem Warriors</h2>
-                <p class="product-description">Nintendo Switch</p>
-                <div class="details">
-                    <p class="product-price">$49.00</p>
-                    <img src="/img/in-stock.svg" alt="">
-                </div>
-                <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
+      <div
+        class="product-card"
+        onclick="redirectToProductPage('product-page3.html')"
+      >
+        <img
+          src="/img/ittakestwoCard.svg"
+          alt="Product Image"
+          class="product-image"
+          onmouseover="showAddToCartButton(this)"
+          onmouseout="hideAddToCartButton(this)"
+        />
+        <div class="product-info">
+          <h2 class="product-title subheading--RussoOne">It Takes Two</h2>
+          <p class="product-description">Nintendo Switch</p>
+          <div class="details">
+            <p class="product-price">$29.95</p>
+            <img src="/img/in-stock.svg" alt="" />
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="add-to-cart-btn">Add to Cart</button>
         </div>
-    </div>
+      </div>
 
+<<<<<<< HEAD
     
 
+=======
+      <div
+        class="product-card"
+        onclick="redirectToProductPage('product-page3.html')"
+      >
+        <img
+          src="/img/sakunaCard.svg"
+          alt="Product Image"
+          class="product-image"
+          onmouseover="showAddToCartButton(this)"
+          onmouseout="hideAddToCartButton(this)"
+        />
+        <div class="product-info">
+          <h2 class="product-title subheading--RussoOne">
+            Sakuna: of Rice and Ruin
+          </h2>
+          <p class="product-description">Nintendo Switch</p>
+          <div class="details">
+            <p class="product-price">$49.00</p>
+            <img src="/img/in-stock.svg" alt="" />
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <div
+        class="product-card"
+        onclick="redirectToProductPage('product-page3.html')"
+      >
+        <img
+          src="/img/fireemblemCard.svg"
+          alt="Product Image"
+          class="product-image"
+          onmouseover="showAddToCartButton(this)"
+          onmouseout="hideAddToCartButton(this)"
+        />
+        <div class="product-info">
+          <h2 class="product-title subheading--RussoOne">
+            Fire Emblem Warriors
+          </h2>
+          <p class="product-description">Nintendo Switch</p>
+          <div class="details">
+            <p class="product-price">$49.00</p>
+            <img src="/img/in-stock.svg" alt="" />
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+>>>>>>> 778f14bc61ee05cfa0f818dfc36646400c45ab19
     </div>
 
     <div class="page">
-        <p>< Page 1 of 3 ></Page></p>
+      <p>< Page 1 of 3 ></p>
     </div>
-        
 
     <!--footer-->
     <div class="footer">
-        <img class="footer__logo" src="../img/GDbiglogo.svg" alt="" />
-        <div class="footer__content">
-          
-          <div class="footer__left">
-            <div class="footer__menu">
-              <h2 class="footer__menu__title--left">
-                Join our community newsletter to receive updates on the latest
-                offers and game news!
-              </h2>
-              <div class="footer__subscribe">
-                <input class="footer__subscribe__input" type="text" placeholder="Your Email"  />
-                <button class="footer__subscribe__button">Subscribe!</button>
-              </div>
-              <div class="footer__socialmedia">
-                <img src="/img/socialMedia.svg" alt="">
-              </div>
+      <img class="footer__logo" src="../img/GDbiglogo.svg" alt="" />
+      <div class="footer__content">
+        <div class="footer__left">
+          <div class="footer__menu">
+            <h2 class="footer__menu__title--left">
+              Join our community newsletter to receive updates on the latest
+              offers and game news!
+            </h2>
+            <div class="footer__subscribe">
+              <input
+                class="footer__subscribe__input"
+                type="text"
+                placeholder="Your Email"
+              />
+              <button class="footer__subscribe__button">Subscribe!</button>
+            </div>
+            <div class="footer__socialmedia">
+              <img src="/img/socialMedia.svg" alt="" />
             </div>
           </div>
-  
-          <div class="footer__center">
-            <div class="footer__menu">
-              <h1 class="footer__menu__title">CUSTOMER SUPPORT</h1>
-              <p class="footer__item">Contact Us</p>
-              <p class="footer__item">FAQs</p>
-              <p class="footer__item">Return and Exchange Policy</p>
-              <p class="footer__item">Warranty</p>
-            </div>
-            <!--policies list-->
-            <div class="footer__menu">
-              <h1 class="footer__menu__title">POLICIES</h1>
-              <p class="footer__item">Privacy Policy</p>
-              <p class="footer__item">Accessibility Policy</p>
-              <p class="footer__item">Shipping Information</p>
-              <p class="footer__item">Terms and Conditions</p>
+        </div>
+
+        <div class="footer__center">
+          <div class="footer__menu">
+            <h1 class="footer__menu__title">CUSTOMER SUPPORT</h1>
+            <p class="footer__item">Contact Us</p>
+            <p class="footer__item">FAQs</p>
+            <p class="footer__item">Return and Exchange Policy</p>
+            <p class="footer__item">Warranty</p>
+          </div>
+          <!--policies list-->
+          <div class="footer__menu">
+            <h1 class="footer__menu__title">POLICIES</h1>
+            <p class="footer__item">Privacy Policy</p>
+            <p class="footer__item">Accessibility Policy</p>
+            <p class="footer__item">Shipping Information</p>
+            <p class="footer__item">Terms and Conditions</p>
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <div class="footer__menu">
+            <div class="footer__menu__title">
+              <h1>Payment Methods</h1>
+              <img
+                class="footer__right__img"
+                src="/img/paymentMethods.svg"
+                alt=""
+              />
             </div>
           </div>
-  
-          <div class="footer__right">
-            <div class="footer__menu">
-                <div class="footer__menu__title">
-                    <h1>Payment Methods</h1>
-                    <img class="footer__right__img" src="/img/paymentMethods.svg" alt="">
-                </div>
-            </div>
-            <div class="footer__menu">
-              <div class="footer__menu__title">
-                    <h1>Buy Now, Pay Later</h1>
-                    <img class="footer__right__img" src="/img/payOptions.svg" alt="">
-                </div>
+          <div class="footer__menu">
+            <div class="footer__menu__title">
+              <h1>Buy Now, Pay Later</h1>
+              <img
+                class="footer__right__img"
+                src="/img/payOptions.svg"
+                alt=""
+              />
             </div>
           </div>
-  
         </div>
       </div>
-  
-  
+    </div>
 
     <script src="/JS/add-to-cart.js"></script>
     <script src="/JS/add-hover.js"></script>
     <script src="/JS/product-navigation.js"></script>
-</body>
+  </body>
 </html>
