@@ -248,3 +248,48 @@ html, body {
   .overlay.show {
     display: block; /* Show the overlay when 'show' class is applied */
   }
+
+  /* Media query for iPhone 12 Pro in portrait mode */
+
+  @media only screen and (max-width: 390px) and (max-height: 844px) {
+    /* CSS rules specific to iPhone 12 Pro in portrait mode */
+  
+    .productPage,
+    .product {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .pageLeft,
+    .pageRight {
+      margin: 0; /* Remove margin */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .image img {
+      max-width: 100%; /* Ensure image takes full width */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Add spacing between image and other elements */
+    }
+  
+    .pageRight {
+      margin-top: 20px; /* Adjust margin */
+    }
+  
+
+  
+    .purchaseInfo .btn {
+        margin: 0 5px; /* Add horizontal margin to buttons */
+        padding: 5px 20px; /* Adjust button padding */
+    }
+  
+    .quantity-input {
+      width: 30px; /* Adjust input width */
+      height: 25px; /* Adjust input height */
+      margin: 0 5px; /* Add horizontal margin to buttons */
+    }
+
+    .back {
+        margin-left: 0; /* Adjust the margin-left as needed */
+      }
+  }
+  
