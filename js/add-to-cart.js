@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cart.push(item);
         updateCart();
         showAddToCartMessage();
+        overlay.classList.remove("show");
 
         localStorage.setItem('cart', JSON.stringify(cart));
     });
