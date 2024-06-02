@@ -2,41 +2,51 @@
   font-family: "Russo One", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size:4rem;
-  line-height: 2rem;
+  font-size: 4rem;
+  line-height: auto;
 }
+
 .headingh1--RussoOne {
   font-family: "Russo One", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 3rem;
-  line-height: normal;
+  line-height: auto;
 }
 .heading--Poppins {
   font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-weight: 300;
-  line-height: normal;
+  line-height: auto;
 }
 .body--Poppins {
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
-  line-height: normal;
+  line-height: auto;
 }
 .subheading--RussoOne {
   font-family: "Russo One", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 1.3rem;
-  line-height: normal;
+  line-height: auto;
 }
-.subheading--Poppins{
+.subheading--Poppins {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 1.3rem;
-  line-height: normal;
+  line-height: auto;
 }
+@media only screen and (max-width: 600px) {
+  .headingmega--RussoOne {
+    font-size: 2rem;
+  }
+  .headingh1--RussoOne {
+    font-size: 1.5rem;
+  }
+}
+
 /*SHOPPING CART*/
 .product-title {
   font-size: 1.1em;
