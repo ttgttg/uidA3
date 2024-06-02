@@ -10,14 +10,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
-@media screen and (max-width: 600px) {
-  .cart {
-    position: fixed;
-    top: 0;
-    right: -90%; /*initially off-screen*/
-    width: 90%;
-  }
-}
+
 .cart {
   position: fixed;
   top: 0;
@@ -189,4 +182,68 @@ button:hover {
 .remove-item-btn:hover {
   background-color: #aaa; /* Darker grey background color on hover */
 }
+
+@media screen and (max-width: 600px) {
+  .cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%; /* Make the cart cover the entire width */
+    height: 100%; /* Make the cart cover the entire height */
+    z-index: 999;
+    background-color: #726262;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: top 800ms cubic-bezier(0.77, 0, 0.175, 1); /* Adjust transition property */
+  }
+
+
+
+    /* Adjust font sizes */
+    body {
+      font-size: 0.8em; /* Adjust as needed */
+      margin-left: 10px;
+    }
+  
+    /* Adjust padding and margins */
+    .header {
+      padding: 1.2em; /* Adjust as needed */
+    }
+  
+
+    /* Adjust button padding */
+    button {
+      padding: 10px 30px; /* Adjust as needed */
+    }
+  
+    /* Adjust cart item sizes */
+    .cart-item {
+      max-width: 300px; /* Adjust as needed */
+      margin-left: 35px;
+    }
+  
+    .cart-item-image {
+      width: 80px; /* Adjust as needed */
+    }
+  
+    /* Adjust quantity adjustment button sizes */
+    .increment-quantity-btn,
+    .decrement-quantity-btn {
+      padding: 3px 8px; /* Adjust as needed */
+      font-size: 0.8em; /* Adjust as needed */
+    }
+  
+    /* Adjust remove item button size */
+    .remove-item-btn {
+      padding: 3px 8px; /* Adjust as needed */
+      font-size: 0.8em; /* Adjust as needed */
+    }
+
+    .bottomSection {
+      position: fixed;
+      bottom: 50px;
+      width: 100%;
+      padding: 20px;
+      margin-left: 35px;
+    }
+  }
 

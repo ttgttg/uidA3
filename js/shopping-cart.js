@@ -8,12 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
     cartIcon.addEventListener('click', function() {
       cart.classList.toggle('show');
       overlay.classList.toggle('show');
+      console.log("closed")
     });
   
     // Close the cart & overlay when "Continue Shopping" text is clicked
     continueShopping.addEventListener('click', function() {
       cart.classList.remove('show');
       overlay.classList.remove("show");
+      console.log("closed")
     });
   });
   
