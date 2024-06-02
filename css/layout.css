@@ -147,8 +147,35 @@ body {
   }
 }
 
+.slideshow {
+  margin-top: 150px;
+}
+
+
+/*WELCOME TO GD GAMES*/
+.hero__text {
+  position: relative;
+}
+.hero__text__title h1 {
+  width: 35%;
+  position: absolute;
+  top: -6em;
+  left: 1.5em;
+}
+.hero__text__body > p {
+  position: absolute;
+  width: 50%;
+  top: -14em;
+  right: 2em;
+  text-align: right;
+  color: #f8441c;
+  line-height: 1.5em;
+  font-size: 1.5rem;
+}
+
 div.graphic-container {
   margin: 0;
+  margin-top: -28em;
   padding: 0;
   box-sizing: border-box;
   height: 100vw;
@@ -173,16 +200,14 @@ div.graphic-container-inner img {
   object-fit: contain;
 }
 
-.slideshow {
-  margin-top: 150px;
-}
-
 /*Featured section*/
-.heading {
-  margin-left: 150px;
-  margin-bottom: 50px;
+.featured__banner {
+  margin-top: -15em;
 }
 
+.featured__text{
+  margin-left: 10%;
+}
 .icons {
   display: flex;
   flex-direction: column;
@@ -197,26 +222,18 @@ div.graphic-container-inner img {
   margin-bottom: 50px;
 }
 
-.container {
+.featured__container {
   display: flex;
   align-items: center; /* Center items vertically */
   position: relative;
   z-index: 1; /* Ensure the container is above the background */
   /* Add other styling for the container as needed */
+  background-image: url("/img/featuredbackground.svg");
+  background-repeat: no-repeat;
 }
 
-.background {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Ensure the background is behind other content */
-}
-
-.background img {
-  width: 100%;
-  height: auto;
+.featured__container .products>img {
+  backdrop-filter: blur(7px);
 }
 
 /*ABOUT US SECTION*/
@@ -247,4 +264,13 @@ div.graphic-container-inner img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.aboutus__end__text {
+  width: 40%;
+  margin: 5em auto;
+  text-align: center;
+}
+.home-footer-transition {
+  background-image: linear-gradient(#252430, #16151a);
+  height: 10em;
 }
