@@ -16,7 +16,24 @@
   font-size: 1.3rem;
   line-height: normal;
 }
+.subheading--RussoOne{
+  font-family: "Russo One", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: normal;
+}
 
+.product-title {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: black;
+}
+.product-price {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
 
 
 /*GENERAL --- GAP BETWEEN TEXT SECTIONS*/

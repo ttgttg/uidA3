@@ -38,20 +38,13 @@ body{
     padding: 3%;
     background-color: #2f2f2f;
     margin-top: 40px; /* Add margin to the top */
-    margin-left: 60px; /* Add margin to the right */
+    margin-left: 40px; /* Add margin to the right */
 }
-
-/* Style for the filter options */
-.filter label, .filter select {
+.filter label {
     display: block;
     margin-bottom: 10px;
 }
-.filter select {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
 
-}
 .spaced-list li {
     margin-bottom: 25px; /* Add margin between list items */
     cursor: pointer;
@@ -62,6 +55,11 @@ body{
 
 
 
+
+
+
+
+/*PRODUCT LIST -- PRODUCTS*/
 .product-list {
     display: flex; /* Use flexbox */
     justify-content: center;
@@ -81,33 +79,23 @@ body{
     border-radius: 10px;
 }
 
-.product-image {
+.product-image img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .product-info {
-    padding: 8px;
+    padding: 1.2em;
     flex: 1;
 }
 
-
-.product-title {
-    font-size: 1.1em;
-    margin-bottom: 5px;
-    color: black;
-}
 
 .product-description {
     color: #666;
     margin-bottom: 10px;
 }
 
-.product-price {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: black;
-}
 
 .in-stock {
     color: green;
