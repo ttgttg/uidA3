@@ -1,243 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GD Games - View Product</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap");
     </style>
 
-    <link rel="stylesheet" href="../css/product-page.css">
-    <link rel="stylesheet" href="../css/navBar.css">
-    <link rel="stylesheet" href="../css/product-details.css">
-    <link rel="stylesheet" href="../css/shopping-cart.css">
-    <link rel="stylesheet" href="../css/footer.css">
-  
-  
-
-</head>
-<body>
-   <!--nav bar -->
-   <div class="nav">
-    <div class="nav__icons">
+    <link rel="stylesheet" href="../css/product-page.css" />
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="stylesheet" href="../css/product-details.css" />
+    <link rel="stylesheet" href="../css/shopping-cart.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <!--nav bar -->
+    <div class="nav">
+      <div class="nav__icons">
         <div div class="nav__searchcontainer">
-            <div class="nav__search">
-                <div class="nav__search__icon"><img src="/img/searchRed.svg" style="width:50%"></img></div>
-                <div class="nav__search__input">
-                <input type="text" placeholder="Search" id="mySearch" />
-                </div>
-                <span class="nav__search__clear"></span>
+          <div class="nav__search">
+            <div class="nav__search__icon">
+              <img src="/img/searchRed.svg" style="width: 50%" />
             </div>
-            <script type="text/javascript" src="../js/searchbar.js"></script>
+            <div class="nav__search__input">
+              <input type="text" placeholder="Search" id="mySearch" />
+            </div>
+            <span class="nav__search__clear"></span>
+          </div>
+          <script type="text/javascript" src="../js/searchbar.js"></script>
         </div>
-        <a href="../html/index.html"><img class="nav__logo" src="../img/GDmainlogo.svg" alt="GDmainlogo" class="layer" /></a>
-        <img class="nav__profile" src="../img/profile.svg" alt="profile icon" class="layer" />
-        <img class="nav__cart" src="../img/shoppingCart.svg" alt="cart icon" class="layer" id="cartIcon">
+        <a href="../html/index.html"
+          ><img
+            class="nav__logo"
+            src="../img/GDmainlogo.svg"
+            alt="GDmainlogo"
+            class="layer"
+        /></a>
+        <img
+          class="nav__profile"
+          src="../img/profile.svg"
+          alt="profile icon"
+          class="layer"
+        />
+        <img
+          class="nav__cart"
+          src="../img/shoppingCart.svg"
+          alt="cart icon"
+          class="layer"
+          id="cartIcon"
+        />
+      </div>
+      <img
+        class="nav__background"
+        src="../img/navbar2.svg"
+        alt="navbar background"
+        class="layer"
+      />
     </div>
-    <img class="nav__background" src="../img/navbar2.svg" alt="navbar background" class="layer" />
-</div>
 
- <!--overlay-->
- <div class="overlay" id="overlay"></div>
+    <!--overlay-->
+    <div class="overlay" id="overlay"></div>
 
-<!--shopping cart-->
-<!--shopping cart-->
-<div class="cart" id="cart">
-<div class="header">
-    <div class="continueShopping">
-        <p>< CONTINUE SHOPPING</p>
-    </div>
-    <div class="cart-title">
-        <h2>YOUR CART</h2>
-    </div>
-</div>
-<!--
+    <!--shopping cart-->
+    <!--shopping cart-->
+    <div class="cart" id="cart">
+      <div class="header">
+        <div class="continueShopping">
+          <p>< CONTINUE SHOPPING</p>
+        </div>
+        <div class="cart-title">
+          <h2>YOUR CART</h2>
+        </div>
+      </div>
+      <!--
 <div class="logo">
     <img src="/img/gdLogoSmall.svg" alt="">
 </div>
 -->
-<div class="listCart">
-
-  
-</div>
-<div class="bottomSection">
-    <div class="cartDetails">
-        <p> <span id="numberOfItems">0</span> Item(s)</p>
-        <p>Total $<span id="totalPrice">0.00</span></p>
-    </div>
-    <button id="checkoutBtn">CHECKOUT</button>
-</div>
-</div>
-
-<script src="/JS/shopping-cart.js"></script>
-<script src="/JS/close-cart.js"></script>
-<script src="/JS/add-to-cart.js"></script>
-<script src="/JS/count.js"></script>
-<script src="/JS/checkout-navigation.js"></script>
-
-<div class="productPage">
-
-  <div class="pageLeft">
-      <div class="back">
-        <a href="product-list.html"> < BACK TO PRODUCT LISTING</a>
-      </div>
-      <div class="image">
-          <img src="/img/splatoon.svg" alt="" width="500px"> 
-      </div>
-
-  </div>
-    
-        <div class="pageRight"> 
-            <div class="productOptions">
-                <h1>Splatoon</h1>
-                <h3>Nintendo Switch</h3>
-                <div class="star-rating">
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="rating-value">5(13)</span>
-                </div>
-                <div class="price">
-                    <h1>$65.95</h1>
-                </div>
-                <div class="purchaseInfo">
-                    <div class="purchaseInfo">
-                        <button type="button" class="btn quantity-btn decrease-btn">-</button>
-                        <input type="number" min="0" value="1" class="quantity-input">
-                        <button type="button" class="btn quantity-btn increase-btn">+</button>
-                        <button type="button" class="btn add-to-cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                        <div id="addToCartMessage" style="display: none;">Item added to cart!</div>
-                    </div>
-                    
-                </div>
-                
-            </div>
+      <div class="listCart"></div>
+      <div class="bottomSection">
+        <div class="cartDetails">
+          <p><span id="numberOfItems">0</span> Item(s)</p>
+          <p>Total $<span id="totalPrice">0.00</span></p>
         </div>
+        <button id="checkoutBtn">CHECKOUT</button>
+      </div>
     </div>
-    
+
+    <script src="/JS/shopping-cart.js"></script>
+    <script src="/JS/close-cart.js"></script>
+    <script src="/JS/add-to-cart.js"></script>
+    <script src="/JS/count.js"></script>
+    <script src="/JS/checkout-navigation.js"></script>
+
+    <div class="productPage">
+      <div class="pageLeft">
+        <div class="back">
+          <a href="product-list.html" class="link"> < BACK TO PRODUCT LISTING</a>
+        </div>
+        <div class="image">
+          <img src="/img/splatoon.svg" alt="" width="500px" />
+        </div>
+      </div>
+
+      <div class="pageRight">
+        <div class="productOptions">
+          <h1 class="headingh1--RussoOne">Splatoon</h1>
+          <h3 class="subheading--Poppins">Nintendo Switch</h3>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="rating-value">5(13)</span>
+          </div>
+          <div class="stockstatus">
+            <img src="/img/in-stock.svg" />
+          </div>
+          <div class="price">
+            <h1>$65.95</h1>
+          </div>
+          <div class="purchaseInfo">
+            <div class="purchaseInfo">
+              <button type="button" class="btn quantity-btn decrease-btn">
+                -
+              </button>
+              <input type="number" min="0" value="1" class="quantity-input" />
+              <button type="button" class="btn quantity-btn increase-btn">
+                +
+              </button>
+              <button type="button" class="btn add-to-cart-btn">
+                Add to Cart <i class="fas fa-shopping-cart"></i>
+              </button>
+              <div id="addToCartMessage" style="display: none">
+                Item added to cart!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="product">
-        <div class="pageLeft">
-            <h1>About Splatoon 3</h1>
-            <div class="description">
-            <p>Enter the Splatlands, a sun-scorched desert inhabited by battle-hardened Inklings and Octolings. Splatsville, the city of chaos, is the adrenaline-fueled heart of this dusty wasteland.</p>
-            <p>Even in this desolate environment, Turf War* reigns supreme and battles rage in new stages located in the surrounding wilds. </p>
-            <p>Dynamic new moves help these fighters dodge attacks and cover more ground, along with a new bow-shaped weapon to sling ink.</p>
-            </div>
-        </div>
-    
-        <div class="pageRight"> 
-                <div class="container">
-                    <div class="headings">
-                      <div class="heading active">Product Details</div>
-                      <div class="heading">Shipping</div>
-                      <div class="heading">Reviews</div>
-                    </div>
-                
-                    <form id="productDetails">
-                      <fieldset>
-                        <div class="image"> 
-                            <img src="/img/productDetails.svg" alt="">
-                        </div>
-                      </fieldset>
-                      <fieldset>
-                        <div class="shipping">
-                            <p>We work hard to keep our shipping rates low, and our shipping options fast!</p>
-                            <ul>
-                              <li>Next-Day shipping for all orders placed before 5pm on workdays</li>
-                              <li>We ship with AusPost Express so you can expect deliveries in a few days</li>
-                              <li>Every order comes with free damage/loss cover</li>
-                          </ul>
-                          
-                        </div>
-                      </fieldset>
-                      <fieldset>
-                        <div class="reviews">
-                            <div class="title">
-                                <p>Check out what our GD Gamers say on these review platforms!</p>
-                            </div>
-                            <div class="icons">
-                                <img src="/img/facebook.svg" alt="">
-                                <img src="/img/google.svg" alt="">
-                                <img src="/img/trustpilot.svg" alt="">
-                            </div>
-                        </div>
-                
-                      </fieldset>
-                    </form>
-                  </div>
-            </div>
-        </div>
-
-    
-
-      <!--footer-->
-      <div class="footer">
-        <img class="footer__logo" src="../img/GDbiglogo.svg" alt="" />
-        <div class="footer__content">
-          
-          <div class="footer__left">
-            <div class="footer__menu">
-              <h2 class="footer__menu__title--left">
-                Join our community newsletter to receive updates on the latest
-                offers and game news!
-              </h2>
-              <div class="footer__subscribe">
-                <input class="footer__subscribe__input" type="text" placeholder="Your Email"  />
-                <button class="footer__subscribe__button">Subscribe!</button>
-              </div>
-              <div class="footer__socialmedia">
-                <img src="/img/socialMedia.svg" alt="">
-              </div>
-            </div>
-          </div>
-  
-          <div class="footer__center">
-            <div class="footer__menu">
-              <h1 class="footer__menu__title">CUSTOMER SUPPORT</h1>
-              <p class="footer__item">Contact Us</p>
-              <p class="footer__item">FAQs</p>
-              <p class="footer__item">Return and Exchange Policy</p>
-              <p class="footer__item">Warranty</p>
-            </div>
-            <!--policies list-->
-            <div class="footer__menu">
-              <h1 class="footer__menu__title">POLICIES</h1>
-              <p class="footer__item">Privacy Policy</p>
-              <p class="footer__item">Accessibility Policy</p>
-              <p class="footer__item">Shipping Information</p>
-              <p class="footer__item">Terms and Conditions</p>
-            </div>
-          </div>
-  
-          <div class="footer__right">
-            <div class="footer__menu">
-                <div class="footer__menu__title">
-                    <h1>Payment Methods</h1>
-                    <img class="footer__right__img" src="/img/paymentMethods.svg" alt="">
-                </div>
-            </div>
-            <div class="footer__menu">
-              <div class="footer__menu__title">
-                    <h1>Buy Now, Pay Later</h1>
-                    <img class="footer__right__img" src="/img/payOptions.svg" alt="">
-                </div>
-            </div>
-          </div>
-  
+      <div class="pageLeft">
+        <h1>About Splatoon 3</h1>
+        <div class="description">
+          <p>
+            Enter the Splatlands, a sun-scorched desert inhabited by
+            battle-hardened Inklings and Octolings. Splatsville, the city of
+            chaos, is the adrenaline-fueled heart of this dusty wasteland.
+          </p>
+          <p>
+            Even in this desolate environment, Turf War* reigns supreme and
+            battles rage in new stages located in the surrounding wilds.
+          </p>
+          <p>
+            Dynamic new moves help these fighters dodge attacks and cover more
+            ground, along with a new bow-shaped weapon to sling ink.
+          </p>
         </div>
       </div>
-  
-  
+
+      <div class="pageRight">
+        <div class="container">
+          <div class="headings">
+            <div class="heading active">Product Details</div>
+            <div class="heading">Shipping</div>
+            <div class="heading">Reviews</div>
+          </div>
+
+          <form id="productDetails">
+            <fieldset>
+              <div class="image">
+                <img src="/img/productDetails.svg" alt="" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="shipping">
+                <p>
+                  We work hard to keep our shipping rates low, and our shipping
+                  options fast!
+                </p>
+                <ul>
+                  <li>
+                    Next-Day shipping for all orders placed before 5pm on
+                    workdays
+                  </li>
+                  <li>
+                    We ship with AusPost Express so you can expect deliveries in
+                    a few days
+                  </li>
+                  <li>Every order comes with free damage/loss cover</li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="reviews">
+                <div class="title">
+                  <p>
+                    Check out what our GD Gamers say on these review platforms!
+                  </p>
+                </div>
+                <div class="icons">
+                  <img src="/img/facebook.svg" alt="" />
+                  <img src="/img/google.svg" alt="" />
+                  <img src="/img/trustpilot.svg" alt="" />
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+      <img class="footer__logo" src="../img/GDbiglogo.svg" alt="" />
+      <div class="footer__content">
+        <div class="footer__left">
+          <div class="footer__menu">
+            <h2 class="footer__menu__title--left">
+              Join our community newsletter to receive updates on the latest
+              offers and game news!
+            </h2>
+            <div class="footer__subscribe">
+              <input
+                class="footer__subscribe__input"
+                type="text"
+                placeholder="Your Email"
+              />
+              <button class="footer__subscribe__button">Subscribe!</button>
+            </div>
+            <div class="footer__socialmedia">
+              <img src="/img/socialMedia.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__center">
+          <div class="footer__menu">
+            <h1 class="footer__menu__title">CUSTOMER SUPPORT</h1>
+            <p class="footer__item">Contact Us</p>
+            <p class="footer__item">FAQs</p>
+            <p class="footer__item">Return and Exchange Policy</p>
+            <p class="footer__item">Warranty</p>
+          </div>
+          <!--policies list-->
+          <div class="footer__menu">
+            <h1 class="footer__menu__title">POLICIES</h1>
+            <p class="footer__item">Privacy Policy</p>
+            <p class="footer__item">Accessibility Policy</p>
+            <p class="footer__item">Shipping Information</p>
+            <p class="footer__item">Terms and Conditions</p>
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <div class="footer__menu">
+            <div class="footer__menu__title">
+              <h1>Payment Methods</h1>
+              <img
+                class="footer__right__img"
+                src="/img/paymentMethods.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu__title">
+              <h1>Buy Now, Pay Later</h1>
+              <img
+                class="footer__right__img"
+                src="/img/payOptions.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/JS/product-details.js"></script>
+    <script src="/JS/add-to-cart.js"></script>
+    <script src="/JS/count.js"></script>
   </body>
-</html>
-
-
-
-<script src="/JS/product-details.js"></script>
-<script src="/JS/add-to-cart.js"></script>
-<script src="/JS/count.js"></script>
-</body>
 </html>
