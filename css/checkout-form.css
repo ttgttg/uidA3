@@ -124,3 +124,93 @@ button:focus {
   box-shadow: none; /* Remove default box shadow */
 }
 
+button[type="submit"] {
+  background-color: #E83A22; /* Green color for submit button */
+  margin-top: 10px;
+  width: 500px;
+}
+
+
+button[type="button"] {
+  background-color: #6c757d; /* Gray color for back button */
+  margin-top: 20px;
+
+}
+
+.nextButton{
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%; /* Reduce maximum width */
+    margin-bottom: 10px; /* Reduce bottom margin */
+  }
+
+  .headings {
+    font-size: 0.9em; /* Decrease font size */
+  }
+
+  .heading {
+    padding: 15px 50px; /* Decrease padding */
+    border-radius: 10px 10px 0 0; /* Adjust border radius */
+  }
+
+  .heading.active {
+    font-size: 1em; /* Increase font size */
+  }
+
+  form {
+    border-radius: 10px; /* Adjust border radius */
+  }
+
+
+  label {
+    font-size: 0.9em; /* Decrease font size */
+    margin-bottom: 3px; /* Decrease bottom margin */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 100%; /* Adjust width to fit container */
+    padding: 6px; /* Decrease padding */
+    margin-bottom: 8px; /* Decrease bottom margin */
+    font-size: 0.9em; /* Decrease font size */
+  }
+
+  select {
+    appearance: none;
+  }
+
+  button {
+    padding: 8
+  }
+
+  
+  .customer-form input {
+    margin-bottom: 10px;
+  }
+
+  /* Style for the buttons */
+
+
+button[type="submit"] {
+  background-color: #E83A22; /* Green color for submit button */
+  margin-top: 10px;
+  width: 275px;
+}
+
+
+button[type="button"] {
+  background-color: #6c757d; /* Gray color for back button */
+  margin-top: 20px;
+
+}
+
+
+
+}

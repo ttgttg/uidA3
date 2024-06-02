@@ -9,13 +9,7 @@ body {
   font-family: Poppins;
   color: white;
 }
-@media only screen and (max-width: 600px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-    max-width: 100vw;
-  }
-}
+
 .back {
   padding: 20px;
   text-decoration: underline;
@@ -103,4 +97,59 @@ body {
   height: auto; /* Maintain aspect ratio */
   margin-right: 10px; /* Add margin for spacing between image and text */
   /* Add any other styles you need */
+}
+
+@media only screen and (max-width: 600px) {
+  .checkoutContainer {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .checkoutDetails,
+  .orderDetails {
+    margin-left: 0; /* Remove left margin */
+  }
+
+
+
+  .logo {
+    margin-top: 20px; /* Adjust margin for logo */
+    margin-bottom: 20px; /* Adjust margin for logo */
+  }
+
+  .customer-form {
+    width: 85%; /* Adjust width to fit screen */
+    font-size: 0.9em; /* Decrease font size */
+    height: 100px;
+  }
+
+  body {
+    font-size: 0.8em; /* Decrease font size */
+  }
+
+  .back {
+    font-size: 0.9em; /* Decrease font size */
+  }
+
+  .checkoutDetails,
+  .orderDetails {
+    font-size: 0.8em; /* Decrease font size */
+  }
+
+
+  /* Adjust padding and margins */
+  .checkoutSection,
+  .orderSummarySection {
+    padding: 10px; /* Decrease padding */
+  }
+
+  .checkoutDetails {
+    margin-left: 10px; /* Decrease left margin */
+  }
+
+  .orderDetails {
+    margin-top: 20px; /* Decrease top margin */
+    margin-left: 20px; /* Decrease left margin */
+  }
+
+
 }
