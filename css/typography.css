@@ -1,0 +1,17 @@
+.headingh1--RussoOne {
+  font-family: "Russo One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.body--Poppins {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+
+.heading--Poppins {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
