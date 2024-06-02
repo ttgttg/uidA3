@@ -27,7 +27,7 @@
     justify-content: space-between;
     align-items: center;
     width: 105%;
-    height:9.5vh;
+    height: 9.5vh;
   }
   /*search bar*/
   .nav__searchcontainer {
@@ -119,8 +119,8 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top:0%;
-    left:0%;
+    top: 0%;
+    left: 0%;
     cursor: pointer;
   }
 
@@ -128,12 +128,17 @@
     display: none;
   }
 
-  img.nav__logo{
-    width: 10vw; 
+  img.nav__logo {
+    width: 10vw;
     height: 3vh;
-    object-fit:cover;
+    object-fit: cover;
     object-position: 0%;
     z-index: -1;
+  }
+  .nav__icons > a {
+    position: absolute;
+    top: 1.5em;
+    left: ;
   }
   .nav__cart {
     display: flex;
@@ -143,8 +148,6 @@
     left: 82%;
     cursor: pointer;
   }
-
-
 }
 
 .nav__background {
@@ -294,4 +297,3 @@ navCart navSearch {
   left: 82%;
   cursor: pointer;
 }
-

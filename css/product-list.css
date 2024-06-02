@@ -185,7 +185,7 @@ body {
     width:90vw;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
     margin:0;
     padding:5vw;
     z-index: 1;
