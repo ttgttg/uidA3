@@ -17,38 +17,45 @@
   <body>
     <div class="nav">
       <div class="nav__icons">
-        <div div class="nav__searchcontainer">
-          <div class="nav__search">
-            <div class="nav__search__icon">
-              <img src="/img/searchRed.svg" style="width: 50%" />
+        <div class="nav__icons__icon">
+          <div div class="nav__searchcontainer">
+            <div class="nav__search">
+              <div class="nav__search__icon">
+                <img src="/img/searchRed.svg" style="width: 50%" />
+              </div>
+              <div class="nav__search__input">
+                <input type="text" placeholder="Search" id="mySearch" />
+              </div>
+              <span class="nav__search__clear"></span>
             </div>
-            <div class="nav__search__input">
-              <input type="text" placeholder="Search" id="mySearch" />
-            </div>
-            <span class="nav__search__clear"></span>
+            <script type="text/javascript" src="../js/searchbar.js"></script>
           </div>
-          <script type="text/javascript" src="../js/searchbar.js"></script>
         </div>
-        <a href="../html/index.html"
-          ><img
-            class="nav__logo"
-            src="../img/GDmainlogo.svg"
-            alt="GDmainlogo"
+        
+          <a class="home" href="../html/index.html"
+            ><img
+              class="nav__logo"
+              src="../img/GDmainlogo.svg"
+              alt="GDmainlogo"
+              class="layer"
+          /></a>
+        
+        <div class="nav__icons__icon">
+          <img
+            src="../img/shoppingCart.svg"
+            alt="cart icon"
             class="layer"
-        /></a>
-        <img
-          class="nav__profile"
-          src="../img/profile.svg"
-          alt="profile icon"
-          class="layer"
-        />
-        <img
-          class="nav__cart"
-          src="../img/shoppingCart.svg"
-          alt="cart icon"
-          class="layer"
-          id="cartIcon"
-        />
+            id="cartIcon"
+          />
+        </div>
+        <div class="nav__icons__icon">
+          <img
+            class="nav__profile"
+            src="../img/profile.svg"
+            alt="profile icon"
+            class="layer"
+          />
+        </div>
       </div>
       <img
         class="nav__background"
