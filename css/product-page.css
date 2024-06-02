@@ -189,7 +189,7 @@ html, body {
 }
 
 #addToCartMessage {
-    background-color: #833016;
+    background-color: #E83A22;
     color: #ffffff;
     padding: 10px 20px; /* Increase padding for better visibility */
     border-radius: 5px;
@@ -197,8 +197,7 @@ html, body {
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust horizontally centered position */
     bottom: 20px; /* Position from the bottom of the viewport */
-    width: 90%; /* Make the message wider */
-    max-width: 400px; /* Set a maximum width */
+    width: 1000px; /* Make the message wider */
     text-align: center; /* Center the text */
 }
 
