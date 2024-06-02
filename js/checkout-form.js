@@ -1,40 +1,25 @@
-// JavaScript for Step Headings - flip through
-const headings = document.querySelectorAll('.heading');
-const fieldsets = document.querySelectorAll('fieldset');
 
-let currentStep = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  const nextButton = document.getElementById("nextButton");
+  const backButton = document.getElementById("backButton");
+  const customerForm = document.getElementById(
+    "customerDetailsForm"
+  );
+  const paymentForm = document.getElementById("paymentDetailsForm");
 
-function showStep(stepIndex) {
-  fieldsets.forEach((fieldset, index) => {
-    if (index === stepIndex) {
-      fieldset.style.display = 'block';
-    } else {
-      fieldset.style.display = 'none';
-    }
+  // Event listener for the next button
+  nextButton.addEventListener("click", function () {
+    // Hide the customer details form
+    customerForm.style.display = "none";
+    // Show the payment details form
+    paymentForm.style.display = "block";
   });
-}
 
-function setActiveStep(stepIndex) {
-  headings.forEach((heading, index) => {
-    if (index === stepIndex) {
-      heading.classList.add('active');
-    } else {
-      heading.classList.remove('active');
-    }
-  });
-}
-
-function goToStep(stepIndex) {
-  currentStep = stepIndex;
-  showStep(currentStep);
-  setActiveStep(currentStep);
-}
-
-headings.forEach((heading, index) => {
-  heading.addEventListener('click', () => {
-    goToStep(index);
+  // Event listener for the back button
+  backButton.addEventListener("click", function () {
+    // Show the customer details form
+    customerForm.style.display = "block";
+    // Hide the payment details form
+    paymentForm.style.display = "none";
   });
 });
-
-showStep(currentStep);
-setActiveStep(currentStep); // Show the first step and set the first step heading as active initially
