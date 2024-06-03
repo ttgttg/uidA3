@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Prevent default behavior of the buttons, such as form submission
+    // Prevent default behavior of the buttons
     decreaseBtn.addEventListener('mousedown', function(event) {
         event.preventDefault();
     });
