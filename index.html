@@ -17,6 +17,7 @@
 
     <link rel="icon" type="image/x-icon" href="img/favicon.png" />
     <script type="text/javascript" src="js/parallax-animation.js"></script>
+    <script type="text/javascript" src="js/autoscroll.js"></script>
   </head>
   <body>
     <div class="nav">
@@ -152,17 +153,17 @@
             </div>
             <div class="slide slide_4">
               <div class="slide-content">
-                <img class="slide-content" src="" alt="screenshot4" />
+                <img class="slide-content" src="img/slideshow-4.jpg" alt="screenshot4" />
               </div>
             </div>
           </div>
         </div>
       </div>
       <div id="controls">
-        <label for="slide1"></label>
-        <label for="slide2"></label>
-        <label for="slide3"></label>
-        <label for="slide4"></label>
+        <label onclick="resetSlider()" for="slide1"></label>
+        <label onclick="resetSlider()" for="slide2"></label>
+        <label onclick="resetSlider()" for="slide3"></label>
+        <label onclick="resetSlider()" for="slide4"></label>
       </div>
       <div id="bullets">
         <label for="slide1"></label>
