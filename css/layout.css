@@ -76,7 +76,7 @@ body {
     align-items: center; /* Center items vertically */
     position: relative;
     z-index: 1;
-    background-image: url("/img/featuredbackground.svg");
+    background-image: url("../img/featuredbackground.svg");
     background-repeat: no-repeat;
   }
 
