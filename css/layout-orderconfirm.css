@@ -20,7 +20,11 @@
 }
 .orderconfirm__text {
   text-align: center;
+  padding-top: 2em;
 }
 .orderconfirm__img {
   padding: 2em;
+}
+#backhome{
+  margin-top:3em;
 }
