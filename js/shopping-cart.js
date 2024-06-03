@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const overlay = document.getElementById('overlay');
   const continueShoppingBtn = document.querySelector('.continueShopping');
 
-  // Toggle 'show' class for cart & overlay when the cart icon is clicked
+  // Show cart & overlay when the cart icon is clicked
   cartIcon.addEventListener('click', function() {
       cart.classList.toggle('show');
       overlay.classList.toggle('show');
