@@ -1,4 +1,3 @@
-// Shopping cart functionality
 
 document.addEventListener('DOMContentLoaded', function() {
     const addToCartBtn = document.querySelector('.add-to-cart-btn');
@@ -7,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const numberOfItems = document.getElementById('numberOfItems');
     const totalPrice = document.getElementById('totalPrice');
 
-    // Initialize cart
+  
     let cart = [];
 
     // Add to cart button click event
@@ -28,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
         showAddToCartMessage();
         overlay.classList.remove("show");
 
-        localStorage.setItem('cart', JSON.stringify(cart));
+        localStorage.setItem('cart', JSON.stringify(cart)); // Creating storage
     });
 
-    // Load cart data from localStorage on page load
+    // Load cart data 
     const savedCart = localStorage.getItem('cart');
     if (savedCart) {
         cart = JSON.parse(savedCart);
@@ -66,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
         numberOfItems.textContent = totalItems;
         totalPrice.textContent = totalCost.toFixed(2);
 
-        // Add event listeners to remove buttons
+        // Event listeners for remove buttons
         const removeButtons = document.querySelectorAll('.remove-item-btn');
         removeButtons.forEach(button => {
             button.addEventListener('click', () => {
@@ -75,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-        // Add event listeners to increment buttons
+        // Event listeners for 'add' buttons
         const incrementButtons = document.querySelectorAll('.increment-quantity-btn');
         incrementButtons.forEach(button => {
             button.addEventListener('click', () => {
@@ -84,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-        // Add event listeners to decrement buttons
+        // Event listeners for 'minus' buttons
         const decrementButtons = document.querySelectorAll('.decrement-quantity-btn');
         decrementButtons.forEach(button => {
             button.addEventListener('click', () => {
@@ -110,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Show "Item added to cart" message
+    // "Item added to cart" message
     function showAddToCartMessage() {
         const message = document.getElementById('addToCartMessage');
         message.style.display = 'block';

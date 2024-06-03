@@ -24,11 +24,11 @@ body {
   background-repeat: no-repeat;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 999;
-  transition: right 800ms cubic-bezier(0.77, 0, 0.175, 1); /* Add transition for the slide effect */
+  transition: right 800ms cubic-bezier(0.77, 0, 0.175, 1); 
 }
 .cart.show {
-  display: block; /* Show the cart when 'show' class is applied */
-  right: 0; /* Slide in the cart when 'show' class is applied */
+  display: block; /* Show the cart when 'show' class is active */
+  right: 0; /* Slide in the cart when 'show' class is active */
 }
 
 .overlay {
@@ -38,11 +38,11 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 998; /* below the cart but above other content */
+  z-index: 998; 
   display: none;
 }
 .overlay.show {
-  display: block; /* Show the overlay when 'show' class is applied */
+  display: block; /* Show the overlay when 'show' class is active */
 }
 
 ul {
@@ -85,16 +85,14 @@ button:hover {
 }
 
 .cart-item-image {
-  max-width: 200px; /* Adjust the maximum width as needed */
-  max-height: 100px; /* Adjust the maximum height as needed */
-  /* Add any other styles you need */
+  max-width: 200px; 
+  max-height: 100px; 
 }
 
 .cart-item {
-  background-color: #f0f0f0; /* Set the background color to white */
-  padding: 10px; /* Add padding for spacing */
-  margin-bottom: 10px; /* Add margin for spacing between items */
-  /* Add any other styles you need */
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  margin-bottom: 10px; 
   max-width: 500px;
   border-radius: 10px;
   color: black;
@@ -102,23 +100,23 @@ button:hover {
 }
 
 .cart-item {
-  display: flex; /* Use flexbox */
-  align-items: center; /* Center vertically */
-  margin-bottom: 10px; /* Add margin for spacing between items */
-  /* Add any other styles you need */
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 10px; 
+  
 }
 
 .cart-item-image {
-  width: 100px; /* Set the width of the image */
+  width: 100px; 
   height: auto;
-  margin-right: 10px; /* Add margin for spacing between image and text */
-  /* Add any other styles you need */
+  margin-right: 10px; 
+  
 }
 
 .listCart {
   max-height: calc(
     100% - 330px
-  ); /* Adjust the height according to your layout */
+  ); 
   overflow-y: auto;
 }
 .listCart {
@@ -127,21 +125,21 @@ button:hover {
 
 .quantity-buttons {
   display: flex;
-  align-items: center; /* Align items vertically */
-  margin-top: 10px; /* Add margin above quantity buttons */
+  align-items: center; 
+  margin-top: 10px; 
 }
 
 .decrement-quantity-btn,
 .increment-quantity-btn {
-  margin-right: 10px; /* Add margin between buttons */
+  margin-right: 10px; 
 }
 
 .remove-item-btn {
-  margin-top: 10px; /* Add margin below quantity buttons */
+  margin-top: 10px; 
   max-width: 50px;
 }
 
-/* Style for quantity adjustment buttons */
+/* Quantity buttons */
 .increment-quantity-btn,
 .decrement-quantity-btn {
   background-color: #007bff;
@@ -160,20 +158,20 @@ button:hover {
 }
 
 .remove-item-btn {
-  margin-top: 10px; /* Add margin below quantity buttons */
+  margin-top: 10px; 
   max-width: 70em;
-  background-color: #ccc; /* Grey background color */
-  color: #666; /* Grey text color */
-  padding: 5px 10px; /* Adjust padding for button size */
+  background-color: #ccc; 
+  color: #666; 
+  padding: 5px 10px; 
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Add transition for hover effect */
+  transition: background-color 0.3s ease; 
   margin-left: 0px;
 }
 
 .remove-item-btn:hover {
-  background-color: #aaa; /* Darker grey background color on hover */
+  background-color: #aaa; 
 }
 
 
@@ -183,54 +181,48 @@ button:hover {
     position: fixed;
     top: 0;
     right: -95vw; /*initially off-screen*/
-    width: 95vw; /* Make the cart cover the entire width */
-    height: 100%; /* Make the cart cover the entire height */
+    width: 95vw; 
+    height: 100%; 
     z-index: 999;
     background-color: #726262;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: right 800ms cubic-bezier(0.77, 0, 0.175, 1); /* Adjust transition property */
+    transition: right 800ms cubic-bezier(0.77, 0, 0.175, 1); 
   }
   .cart.show {
-    display: block; /* Show the cart when 'show' class is applied */
-    right: 0; /* Slide in the cart when 'show' class is applied */
+    display: block; 
+    right: 0; 
   }
 
-  /* Adjust font sizes */
   body {
-    font-size: 0.8em; /* Adjust as needed */
+    font-size: 0.8em; 
   }
 
-  /* Adjust padding and margins */
   .header {
-    padding: 1.2em; /* Adjust as needed */
+    padding: 1.2em; 
   }
 
-  /* Adjust button padding */
   button {
-    padding: 10px 30px; /* Adjust as needed */
+    padding: 10px 30px; 
   }
 
-  /* Adjust cart item sizes */
   .cart-item {
-    max-width: 300px; /* Adjust as needed */
+    max-width: 300px; 
     margin-left: 35px;
   }
 
   .cart-item-image {
-    width: 80px; /* Adjust as needed */
+    width: 80px; 
   }
 
-  /* Adjust quantity adjustment button sizes */
   .increment-quantity-btn,
   .decrement-quantity-btn {
-    padding: 3px 8px; /* Adjust as needed */
-    font-size: 0.8em; /* Adjust as needed */
+    padding: 3px 8px; 
+    font-size: 0.8em;
   }
 
-  /* Adjust remove item button size */
   .remove-item-btn {
-    padding: 3px 8px; /* Adjust as needed */
-    font-size: 0.8em; /* Adjust as needed */
+    padding: 3px 8px; 
+    font-size: 0.8em; 
   }
 
   .bottomSection {

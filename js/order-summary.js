@@ -13,10 +13,10 @@ function populateOrderSummary(cart) {
     const totalItemsSummary = document.getElementById('totalItemsSummary');
     const totalCostSummary = document.getElementById('totalCostSummary');
 
-    // Clear previous content
+    //Clear previous content
     cartItemsSummary.innerHTML = '';
 
-    // Populate cart items
+    //Populate cart items
     cart.forEach(item => {
         const itemSummary = document.createElement('div');
         itemSummary.innerHTML = `
@@ -31,7 +31,7 @@ function populateOrderSummary(cart) {
         `;
         cartItemsSummary.appendChild(itemSummary);
     });
-    // Populate total items and total cost
+    //Populate total items and total cost
     totalItemsSummary.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
     totalCostSummary.textContent = cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
 }
