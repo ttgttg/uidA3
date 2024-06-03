@@ -40,9 +40,6 @@
     height: 300px; /* Set the height of each fieldset */
 
   }
-  .fieldset--visible {
-    display: block !important; /* Use a class to make a fieldset visible */
-}
   
 
   fieldset img {
@@ -110,6 +107,9 @@
     fieldset{
       height:fit-content;
     }
+    .shipping{
+      margin:auto 10px;
+    }
 
     .shipping, .reviews {
         padding: 10px;
@@ -125,7 +125,7 @@
     }
 
     .icons img {
-        width: 90px;
-        margin: 25px;
+        width: 65px;
+        margin: 20px;
     }
 }
