@@ -7,20 +7,22 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap");
     </style>
-    <link rel="stylesheet" href="/css/typography.css"/>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/typography.css" />
     <link rel="stylesheet" href="../css/navbar.css" />
-    <link rel="stylesheet" href="/css/product-page.css" />
+    <link rel="stylesheet" href="../css/product-page.css" />
     <link rel="stylesheet" href="../css/shopping-cart.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/product-details.css" />
   </head>
   <body>
+    <!--nav bar -->
     <div class="nav">
       <div class="nav__icons">
         <div div class="nav__searchcontainer">
           <div class="nav__search">
             <div class="nav__search__icon">
-              <img src="/img/searchRed.svg" style="width: 50%" />
+              <img src="../img/searchRed.svg" style="width: 50%" />
             </div>
             <div class="nav__search__input">
               <input type="text" placeholder="Search" id="mySearch" />
@@ -29,13 +31,16 @@
           </div>
           <script type="text/javascript" src="../js/searchbar.js"></script>
         </div>
-        <a href="../index.html"
-          ><img
-            class="nav__logo"
-            src="../img/GDmainlogo.svg"
-            alt="GDmainlogo"
-            class="layer"
-        /></a>
+        <div class="navtohome">
+          <a href="../index.html"
+            ><img
+              class="nav__logo"
+              src="../img/GDmainlogo.svg"
+              alt="GDmainlogo"
+              class="layer"
+          /></a>
+        </div>
+
         <img
           class="nav__profile"
           src="../img/profile.svg"
@@ -91,7 +96,6 @@
     <script src="/JS/count.js"></script>
     <script src="/JS/checkout-navigation.js"></script>
 
-
     <!--Product page - need to add BACK TO PRODUCT LISTING-->
     <div class="productPage">
       <div class="pageLeft">
@@ -107,8 +111,8 @@
 
       <div class="pageRight">
         <div class="productOptions">
-          <h1 class="headingh1--RussoOne">Cult of the Lamb</h1>
-          <h3 class="subheading--Poppins">Nintendo Switch</h3>
+          <h1 class="headingh1--RussoOne ">Cult of the Lamb</h1>
+          <h3 class="subheading--Poppins textcontainer__heading">Nintendo Switch</h3>
           <div class="star-rating">
             <span class="star">&#9733;</span>
             <span class="star">&#9733;</span>
