@@ -24,17 +24,17 @@ function changeImage(newSrc) {
 }
 
 xbox.addEventListener("click", function () {
-  changeImage("../img/consoles.svg");
+  changeImage("uidA3/img/consoles.svg");
 });
 
 ps.addEventListener("click", function () {
-  changeImage("../img/psconsole.svg");
+  changeImage("uidA3/img/psconsole.svg");
 });
 
 nintendo.addEventListener("click", function () {
-  changeImage("../img/switchconsole.svg");
+  changeImage("uidA3/img/switchconsole.svg");
 });
 
 wii.addEventListener("click", function () {
-  changeImage("../img/wiiconsole.svg");
+  changeImage("uidA3/img/wiiconsole.svg");
 });
