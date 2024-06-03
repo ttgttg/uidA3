@@ -100,18 +100,6 @@
 
     <!--home page-->
 
-    <div class="homepage"></div>
-    <!--trying another way
-    <div class="carousel">
-        <button onclick="function()">View Item</button>
-        <ol featuredlist>
-            <li onclick="changeActive(0)"></li>
-            <li onclick="changeActive(1)"></li>
-            <li onclick="changeActive(2)"></li>
-        </ol>
-    </div>
-    -->
-
     <button type="button" class="btn add-to-cart-btn">
       <i class="fas fa-shopping-cart"></i>
     </button>
@@ -199,7 +187,7 @@
           <h1 class="headingmega--RussoOne">WELCOME TO GD GAMES</h1>
         </div>
         <div class="hero__text__body">
-          <p class=".subheading--Poppins">
+          <p class=".subheading--Poppins" id="hero__text__body">
             Videogames, consoles, accessories. <br />The Good Deals. <br />The
             Best Service.
           </p>
@@ -317,17 +305,110 @@
           <h2>The Essentials.</h2>
         </div>
       </div>
-
       <div class="featured__container">
         <div class="icons">
-          <img src="img/xboxIcon.svg" alt="" />
-          <img src="img/playstationIcon.svg" alt="" />
-          <img src="img/nintendoIcon.svg" alt="" />
-          <img src="img/wiiIcon.svg" alt="" />
-          <img src="img/scrollIcon.svg" alt="" />
+          <div class="flexicon">
+            <img id="xbox" src="img/xboxIcon.svg" alt="Xbox Icon" />
+          </div>
+          <div class="flexicon">
+            <img id="ps" src="img/playstationIcon.svg" alt="Playstation Icon" />
+          </div>
+          <div class="flexicon">
+            <img id="nintendo" src="img/nintendoIcon.svg" alt="Nintendo Icon" />
+          </div>
+          <div class="flexicon">
+            <img id="wii" src="img/wiiIcon.svg" alt="Wii Icon" />
+          </div>
         </div>
         <div class="products">
-          <img src="img/consoles.svg" alt="" />
+          <img id="img-area" src="img/consoles.svg" alt="Console Image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bestsellers">
+      <div class="bestsellers__container">
+        <div class="bestsellers__text">
+          <h1 class="headingh1--RussoOne">BEST SELLERS</h1>
+          <h2>Everyone's favs.</h2>
+        </div>
+        <div class="bestsellers__productlist">
+          <div
+            class="bestsellers__product"
+            onclick="redirectToProductPage('html/product-page2.html')"
+          >
+            <img
+              src="../img/splatoonCard.svg"
+              alt="Product Image"
+              class="product-image"
+              onmouseover="showAddToCartButton(this)"
+              onmouseout="hideAddToCartButton(this)"
+            />
+            <div class="bestsellers__product__info">
+              <h2 class="product-title subheading--RussoOne">Splatoon 3</h2>
+            </div>
+          </div>
+        
+          <div
+            class="bestsellers__product"
+            onclick="redirectToProductPage('html/product-page3.html')"
+          >
+            <img
+              src="../img/ittakestwoCard.svg"
+              alt="Product Image"
+              class="product-image"
+              onmouseover="showAddToCartButton(this)"
+              onmouseout="hideAddToCartButton(this)"
+            />
+            <div class="bestsellers__product__info">
+              <h2 class="product-title subheading--RussoOne">It Takes 2</h2>
+            </div>
+          </div>
+          <div
+            class="bestsellers__product"
+            onclick="redirectToProductPage('html/product-page.html')"
+          >
+            <img
+              src="../img/helloneighbour2Card.svg"
+              alt="Product Image"
+              class="product-image"
+              onmouseover="showAddToCartButton(this)"
+              onmouseout="hideAddToCartButton(this)"
+            />
+            <div class="bestsellers__product__info">
+              <h2 class="product-title subheading--RussoOne">Hello Neighbour</h2>
+            </div>
+          </div>
+          <div
+            class="bestsellers__product"
+            onclick="redirectToProductPage('product-page2.html')"
+          >
+            <img
+              src="../img/crystarCard.svg"
+              alt="Product Image"
+              class="product-image"
+              onmouseover="showAddToCartButton(this)"
+              onmouseout="hideAddToCartButton(this)"
+            />
+            <div class="bestsellers__product__info">
+              <h2 class="product-title subheading--RussoOne">Crystar</h2>
+            </div>
+          </div>
+          <div
+            class="bestsellers__product"
+            onclick="redirectToProductPage('product-page2.html')"
+          >
+            <img
+              src="../img/saintkotarCard.svg"
+              alt="Product Image"
+              class="product-image"
+              onmouseover="showAddToCartButton(this)"
+              onmouseout="hideAddToCartButton(this)"
+            />
+            <div class="bestsellers__product__info">
+              <h2 class="product-title subheading--RussoOne">Saint Kotar</h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -471,6 +552,8 @@
       </div>
     </div>
     <div id="preloader"></div>
+    <script src="../js/product-navigation.js"></script>
     <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/img-change.js"></script>
   </body>
 </html>

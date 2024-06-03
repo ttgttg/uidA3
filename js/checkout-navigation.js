@@ -1,4 +1,3 @@
-
 checkoutBtn.addEventListener('click', () => {
     console.log('Checkout button clicked'); 
     // Redirect the user to the checkout page
