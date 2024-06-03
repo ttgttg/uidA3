@@ -28,8 +28,8 @@
 .pageLeft {
   flex: 1;
   padding: 20px;
-  margin-top: 100px;
-  margin-left: 100px;
+  margin-top: 60px;
+  margin-left: 60px;
 }
 
 .back {
@@ -46,7 +46,7 @@
 .pageRight {
   flex: 1;
   padding: 20px;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .productOptions {
@@ -58,7 +58,9 @@
 }
 
 .description p {
-  margin-bottom: 15px; /* Add space between paragraphs */
+  font-size: 1rem;
+  margin-bottom: 2em; /* Add space between paragraphs */
+  line-height: 1.3em;
 }
 
 .slideshow img {
@@ -259,20 +261,20 @@ body {
     margin: 0;
     padding: 20px; /* Reduce padding */
   }
-  .pageLeft{
+  .pageLeft {
     margin-top: 6.6vh;
     padding-bottom: 10px;
   }
-  .price{
-    margin:0;
-    padding:0;
+  .price {
+    margin: 0;
+    padding: 0;
     font-size: 0.8em;
   }
   .stockstatus img {
     object-fit: contain;
     width: 4em;
     padding-top: 1em;
-}
+  }
   .image {
     margin-top: 1.2em; /* Add spacing between image and other elements */
   }
@@ -280,11 +282,15 @@ body {
   .image img {
     max-width: 100%; /* Ensure image takes full width */
     height: auto; /* Maintain aspect ratio */
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
   .productOptions {
-  margin-top: 0;
-}
+    margin-top: 0;
+  }
+  .description p {
+    font-size: 0.7rem;
+    margin-bottom: 2em; /* Add space between paragraphs */
+  }
   fieldset {
     width: 100%;
     margin: 0;
