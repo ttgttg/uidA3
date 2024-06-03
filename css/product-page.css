@@ -1,302 +1,308 @@
-
 .productDetails {
-    color: white;
+  color: white;
 }
 
-.productPage{
-    display: flex;
-    font-family: 'Poppins';
-    font-size: 14px;
-    background: linear-gradient(to top, #442727, #16151A);
-    color: white;
-    padding: 20px; /* Add padding for even spacing */
-
+.productPage {
+  display: flex;
+  font-family: "Poppins";
+  font-size: 14px;
+  background: linear-gradient(to top, #442727, #16151a);
+  color: white;
+  padding: 20px; /* Add padding for even spacing */
 }
 
-
-.product{
-    display: flex;
-    font-family: 'Poppins';
-    font-size: 14px;
-    background: linear-gradient(to top, #16151A, #442727);
-    color: white;
+.product {
+  display: flex;
+  font-family: "Poppins";
+  font-size: 14px;
+  background: linear-gradient(to top, #16151a, #442727);
+  color: white;
 }
 
-.stockstatus img{
-    object-fit: contain;
-    width:7em;
-    padding-top:2em;
+.stockstatus img {
+  object-fit: contain;
+  width: 7em;
+  padding-top: 2em;
 }
 
 .pageLeft {
-    flex: 1;
-    padding: 20px;
-    margin-top: 100px;
-    margin-left: 100px;
+  flex: 1;
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: 100px;
 }
 
-.back{
-    margin-left: -90px;
-    cursor: pointer;
-    text-decoration: underline;
-    color: white;
+.back {
+  margin-left: -90px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
 }
 
-.image{ 
-margin-top: 50px;
+.image {
+  margin-top: 50px;
 }
 
 .pageRight {
-    flex: 1;
-    padding: 20px;
-    margin-top: 120px;
+  flex: 1;
+  padding: 20px;
+  margin-top: 120px;
 }
 
-.productOptions{
-    margin-top: 50px;
+.productOptions {
+  margin-top: 50px;
 }
 
 .description {
-    max-width: 500px; /* Adjust maximum width as needed */
+  max-width: 500px; /* Adjust maximum width as needed */
 }
 
 .description p {
-    margin-bottom: 15px; /* Add space between paragraphs */
+  margin-bottom: 15px; /* Add space between paragraphs */
 }
-
-
 
 .slideshow img {
-    max-width: 100%; /* Ensure the image fits within its container */
-    height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure the image fits within its container */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.productDescription{
-    margin-top: -50px;
+.productDescription {
+  margin-top: -50px;
 }
 
 .star-rating {
-    font-size: 24px; /* Adjust the size of the stars */
+  font-size: 24px; /* Adjust the size of the stars */
 }
 
 .star {
-    color: white; /* Color of the stars */
+  color: white; /* Color of the stars */
 }
 
 .rating-value {
-    margin-left: 10px; /* Spacing between stars and rating value */
-    font-size: 14px; /* Font size of the rating value */
+  margin-left: 10px; /* Spacing between stars and rating value */
+  font-size: 14px; /* Font size of the rating value */
 }
 
-.price{
-    margin-top: 100px;
+.price {
+  margin-top: 100px;
 }
 
 .purchaseInfo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .quantity-btn {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    color: #333;
-    padding: 5px 10px;
-    cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .quantity-input {
-    width: 50px;
-    text-align: center;
-
+  width: 50px;
+  text-align: center;
 }
 
 .add-to-cart-btn {
-    margin-left: 10px;
-    background-color: #E83A22; /* Change button background color to red */
-    color: white; /* Change text color to white for better visibility */
-    padding: 10px 150px; /* Adjust padding for larger button */
-    border: none; /* Remove default button border */
-    cursor: pointer; /* Change cursor to pointer on hover for better user experience */
+  margin-left: 10px;
+  background-color: #e83a22; /* Change button background color to red */
+  color: white; /* Change text color to white for better visibility */
+  padding: 10px 150px; /* Adjust padding for larger button */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor to pointer on hover for better user experience */
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Poppins;
-    color: white;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  color: white;
 }
 
 .checkoutContainer {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
 
-.checkoutSection, .orderSummarySection {
-    flex: 1;
+.checkoutSection,
+.orderSummarySection {
+  flex: 1;
 }
 
 /* Optional: Adjust styling for each section */
 .checkoutSection {
-    background-color: #3A2E2E;
+  background-color: #3a2e2e;
 }
 
 .orderSummarySection {
-    background-color: #271F1F;
+  background-color: #271f1f;
 }
 
-.checkoutDetails{
-    margin-top: 75px;
-    margin-left: 75px;
+.checkoutDetails {
+  margin-top: 75px;
+  margin-left: 75px;
 }
 
-.orderDetails{
-    margin-top: 75px;
-    margin-left: 75px;
+.orderDetails {
+  margin-top: 75px;
+  margin-left: 75px;
 }
 
 .logo {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin-top: 250px;
-    margin-bottom: 20px; /* Add margin to create space below the logo */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 250px;
+  margin-bottom: 20px; /* Add margin to create space below the logo */
 }
 
 .customer-form {
-    padding: 20px;
-    background-color: #FFEFEA;
-    color: #833016;
-    max-width: 500px;
-    
+  padding: 20px;
+  background-color: #ffefea;
+  color: #833016;
+  max-width: 500px;
 }
 
 .customer-form label {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .customer-form input {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.title{
-    padding: 10px;
-    background-color: #FFEFEA;
-    color: #833016;
-    max-width: 200px;
+.title {
+  padding: 10px;
+  background-color: #ffefea;
+  color: #833016;
+  max-width: 200px;
 }
 
 #addToCartMessage {
-    background-color: #E83A22;
-    color: #ffffff;
-    padding: 10px 20px; /* Increase padding for better visibility */
-    border-radius: 5px;
-    position: fixed; /* Fix the position to the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust horizontally centered position */
-    bottom: 20px; /* Position from the bottom of the viewport */
-    width: 1000px; /* Make the message wider */
-    text-align: center; /* Center the text */
+  background-color: #e83a22;
+  color: #ffffff;
+  padding: 10px 20px; /* Increase padding for better visibility */
+  border-radius: 5px;
+  position: fixed; /* Fix the position to the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust horizontally centered position */
+  bottom: 20px; /* Position from the bottom of the viewport */
+  width: 1000px; /* Make the message wider */
+  text-align: center; /* Center the text */
 }
 
 .quantity-control {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Align items vertically */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
 }
 
 .quantity-input {
-    width: 40px; /* Adjust the width as needed */
-    height: 30px; /* Adjust the height as needed */
-    text-align: center; /* Center align text in the input */
-    margin: 5px; /* Add margin between input and buttons */
-    background-color: transparent; /* Set background color to transparent */
-    border: 1px solid #ccc; /* Add a border to the input */
-    border-radius: 5px; /* Add border radius for rounded corners */
-    color: white;
+  width: 40px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  text-align: center; /* Center align text in the input */
+  margin: 5px; /* Add margin between input and buttons */
+  background-color: transparent; /* Set background color to transparent */
+  border: 1px solid #ccc; /* Add a border to the input */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  color: white;
 }
-
 
 .quantity-btn {
-    background-color: transparent; /* Set button background to transparent */
-    border: none; /* Remove button border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-size: 2em; /* Adjust font size */
-    color: white;
-    padding: 10px;
+  background-color: transparent; /* Set button background to transparent */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 2em; /* Adjust font size */
+  color: white;
+  padding: 10px;
 }
-
-
 
 /* Style for quantity display */
 .quantity {
-    font-weight: bold;
-    margin: 0 5px;
+  font-weight: bold;
+  margin: 0 5px;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998; /* below the cart but above other content */
+  display: none;
+}
+.overlay.show {
+  display: block; /* Show the overlay when 'show' class is applied */
+}
+
+/* Media query for iPhone 12 Pro in portrait mode */
+
+@media only screen and (max-width: 600px) {
+  /* CSS rules specific to iPhone 12 Pro in portrait mode */
+
+  .productPage,
+  .product {
+    flex-direction: column; /* Stack items vertically */
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 998; /* below the cart but above other content */
-    display: none;
-  }
-  .overlay.show {
-    display: block; /* Show the overlay when 'show' class is applied */
+    padding: 0;
+    margin: 0;
   }
 
-  /* Media query for iPhone 12 Pro in portrait mode */
-
-  @media only screen and (max-width: 600px)  {
-    /* CSS rules specific to iPhone 12 Pro in portrait mode */
-  
-    .productPage,
-    .product {
-      flex-direction: column; /* Stack items vertically */
-      width: 100%;
-      padding:0;
-      margin:0;
-    }
-  
-    .pageLeft,
-    .pageRight {
-      margin: 0; /* Remove margin */
-      padding: 10px; /* Reduce padding */
-    }
-  
-    .image img {
-      max-width: 100%; /* Ensure image takes full width */
-      height: auto; /* Maintain aspect ratio */
-      margin-bottom: 20px; /* Add spacing between image and other elements */
-    }
-  
-    .pageRight {
-      margin-top: 20px; /* Adjust margin */
-    }
-
-    fieldset{
-        width:100%;
-        margin:0;
-        padding:0;
-    }
-  
-    .purchaseInfo .btn {
-        margin: 0 5px; /* Add horizontal margin to buttons */
-        padding: 5px 20px; /* Adjust button padding */
-    }
-  
-    .quantity-input {
-      width: 30px; /* Adjust input width */
-      height: 25px; /* Adjust input height */
-      margin: 0 5px; /* Add horizontal margin to buttons */
-    }
-
-    .back {
-        margin-left: 0; /* Adjust the margin-left as needed */
-      }
+  .pageLeft,
+  .pageRight {
+    margin: 0;
+    padding: 20px; /* Reduce padding */
   }
-  
+  .pageLeft{
+    margin-top: 6.6vh;
+    padding-bottom: 10px;
+  }
+  .price{
+    margin:0;
+    padding:0;
+    font-size: 0.8em;
+  }
+  .stockstatus img {
+    object-fit: contain;
+    width: 4em;
+    padding-top: 1em;
+}
+  .image {
+    margin-top: 1.2em; /* Add spacing between image and other elements */
+  }
+
+  .image img {
+    max-width: 100%; /* Ensure image takes full width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0; 
+  }
+  .productOptions {
+  margin-top: 0;
+}
+  fieldset {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .purchaseInfo .btn {
+    margin: 0 5px; /* Add horizontal margin to buttons */
+    padding: 5px 20px; /* Adjust button padding */
+  }
+
+  .quantity-input {
+    width: 30px; /* Adjust input width */
+    height: 25px; /* Adjust input height */
+    margin: 0 5px; /* Add horizontal margin to buttons */
+  }
+
+  .back {
+    margin-left: 0; /* Adjust the margin-left as needed */
+  }
+}
