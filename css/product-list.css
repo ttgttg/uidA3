@@ -44,19 +44,19 @@ body {
   justify-content: space-between;
   width: 98%;
   height: 0.6em;
-  margin: 1% auto; /*centers text*/
+  margin: 1% auto; 
   align-items: center;
 }
 
 /*PRODUCT LIST --- FILTER*/
 .filter {
-  float: left; /* Ensure the filter stays on the left side */
-  width: 20%; /* Adjust as needed */
+  float: left; 
+  width: 20%; 
   height: 100vh;
   padding: 3%;
   background-color: #2f2f2f;
-  margin-top: 40px; /* Add margin to the top */
-  margin-left: 40px; /* Add margin to the right */
+  margin-top: 40px; 
+  margin-left: 40px; 
 }
 .filter label {
   display: block;
@@ -75,8 +75,8 @@ body {
 .product-card {
   border: 1px solid #ccc;
   overflow: hidden;
-  width: 250px; /* Set a fixed width */
-  height: 400px; /* Set a fixed height */
+  width: 250px; 
+  height: 400px; 
   margin: 1em 1em 5em 3em;
   display: flex;
   flex-direction: column;
@@ -102,12 +102,12 @@ body {
 }
 
 .product-card:last-child {
-  margin-right: 0; /* Remove margin from the last card */
+  margin-right: 0;
 }
 
 .page {
   width: 100%;
-  text-align: center; /* Optional: Center the content horizontally */
+  text-align: center;
   background-color: #2f2f2f;
 }
 
@@ -139,17 +139,17 @@ body {
 
 .details {
   display: flex;
-  align-items: flex-end; /* Vertically center align */
+  align-items: flex-end; 
   margin-top: 10px;
 }
 
 .product-price {
-  margin-right: 100px; /* Adjust as needed */
+  margin-right: 100px; 
 }
 
 .details img {
-  width: 200px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 200px; 
+  height: auto; 
 }
 
 @media only screen and (max-width: 600px) {
@@ -169,7 +169,7 @@ body {
     justify-content: space-between;
     width: 98%;
     height: 1em;
-    margin: 1% auto; /*centers text*/
+    margin: 1% auto; 
     align-items: center;
   }
 
@@ -198,7 +198,7 @@ body {
     margin: 2vw;
   }
   .product-card:last-child {
-    margin-right: 0; /* Remove margin from the last card */
+    margin-right: 0; 
   }
 
   .product-info {

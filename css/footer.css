@@ -12,27 +12,27 @@
 
 
 .footer__logo {
-  margin: 4em; /* Adjust the margin as needed */
+  margin: 4em; 
 }
 
 .footer__content {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* Center items horizontally */
-  text-align: center; /* Center text horizontally */
+  align-items: flex-start; 
+  text-align: center; 
 }
 
 .footer__left,
 .footer__center,
 .footer__right {
-  flex: 1; /* Allow the elements to grow and shrink equally */
-  text-align: center; /* Center text horizontally */
+  flex: 1; 
+  text-align: center; 
 }
 
 .footer__menu {
   margin-bottom: 5em;
-  list-style-type: none; /* Remove the default bullets */
+  list-style-type: none; 
 }
 
 .footer__item {
