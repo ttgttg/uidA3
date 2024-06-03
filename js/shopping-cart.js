@@ -1,22 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const cartIcon = document.getElementById('cartIcon');
-    const cart = document.getElementById('cart');
-    const continueShopping = document.querySelector('.continueShopping');
-    const overlay = document.getElementById("overlay");
-  
-    // Toggle 'show' class for cart & overlay when the cart icon is clicked
-    cartIcon.addEventListener('click', function() {
+  const cartIcon = document.getElementById('cartIcon');
+  const cart = document.getElementById('cart');
+  const overlay = document.getElementById('overlay');
+  const continueShoppingBtn = document.querySelector('.continueShopping');
+
+  // Toggle 'show' class for cart & overlay when the cart icon is clicked
+  cartIcon.addEventListener('click', function() {
       cart.classList.toggle('show');
       overlay.classList.toggle('show');
-      console.log("closed")
-    });
-  
-    // Close the cart & overlay when "Continue Shopping" text is clicked
-    continueShopping.addEventListener('click', function() {
-      cart.classList.remove('show');
-      overlay.classList.remove("show");
-      console.log("closed")
-    });
+      console.log("Cart toggled");
   });
-  
-  
+
+  // Close the cart & overlay when "Continue Shopping" button is clicked
+  continueShoppingBtn.addEventListener('click', function() {
+      cart.classList.remove('show');
+      overlay.classList.remove('show');
+      console.log("Cart closed");
+  });
+});
+
