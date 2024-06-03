@@ -26,7 +26,7 @@ body {
   flex: 1;
 }
 
-/* Optional: Adjust styling for each section */
+
 .checkoutSection {
   background-color: #3a2e2e;
 }
@@ -46,10 +46,10 @@ body {
 
 .logo {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; 
+  align-items: center; 
   margin-top: 250px;
-  margin-bottom: 20px; /* Add margin to create space below the logo */
+  margin-bottom: 20px; 
 }
 
 .customer-form {
@@ -70,74 +70,69 @@ body {
 }
 
 .cart-item-image {
-  max-width: 200px; /* Adjust the maximum width as needed */
-  max-height: 100px; /* Adjust the maximum height as needed */
-  /* Add any other styles you need */
+  max-width: 200px; 
+  max-height: 100px; 
+ 
 }
 
 .cart-item {
-  background-color: #f0f0f0; /* Set the background color to white */
-  padding: 10px; /* Add padding for spacing */
-  margin-bottom: 10px; /* Add margin for spacing between items */
-  /* Add any other styles you need */
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  margin-bottom: 10px; 
   max-width: 500px;
   border-radius: 10px;
   color: black;
 }
 
 .cart-item {
-  display: flex; /* Use flexbox */
-  align-items: center; /* Center vertically */
-  margin-bottom: 10px; /* Add margin for spacing between items */
-  /* Add any other styles you need */
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 10px; 
 }
 
 .cart-item-image {
-  width: 100px; /* Set the width of the image */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Add margin for spacing between image and text */
-  /* Add any other styles you need */
+  width: 100px; 
+  height: auto; 
+  margin-right: 10px; 
 }
 
 @media only screen and (max-width: 600px) {
   .checkoutContainer {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
   }
 
 
   .logo {
-    margin-top: 20px; /* Adjust margin for logo */
-    margin-bottom: 20px; /* Adjust margin for logo */
+    margin-top: 20px; 
+    margin-bottom: 20px; 
   }
 
   .customer-form {
-    width: 85%; /* Adjust width to fit screen */
-    font-size: 0.9em; /* Decrease font size */
+    width: 85%; 
+    font-size: 0.9em; 
     height: 100px;
   }
 
   body {
-    font-size: 0.8em; /* Decrease font size */
+    font-size: 0.8em; 
   }
 
   .back {
-    font-size: 0.9em; /* Decrease font size */
+    font-size: 0.9em; 
   }
 
   .checkoutDetails,
   .orderDetails {
-    font-size: 0.8em; /* Decrease font size */
+    font-size: 0.8em; 
   }
 
-
-  /* Adjust padding and margins */
   .checkoutSection,
   .orderSummarySection {
-    padding: 10px; /* Decrease padding */
+    padding: 10px; 
   }
 
   .checkoutDetails {
-    margin-left: 10px; /* Decrease left margin */
+    margin-left: 10px; 
   }
 
   .orderDetails { 
