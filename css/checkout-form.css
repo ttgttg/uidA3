@@ -33,7 +33,7 @@
   fieldset{
     border: none;
     width: 100%; 
-    height: 300px; 
+    height: 300px; /* Set the height of each fieldset */
 
   }
 
@@ -61,7 +61,7 @@ select {
     appearance: none;
 }
 
-/* Submit button */
+/* Style for submit button */
 button[type="submit"] {
     display: block;
     width: 300px;
@@ -85,29 +85,30 @@ button[type="submit"]:hover {
   color: black;
   font-family: Poppins;
   position: relative;
-  font-weight: bold; 
+  font-weight: bold; /* Make all h1 headings bold inside .itemSummary */
   margin-left: 0px;
 
 }
 
-/* Buttons */
+/* Style for the buttons */
 button {
-  padding: 10px 20px; 
-  background-color: #007bff; 
-  color: #fff; 
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  margin-right: 10px; 
-
-/* Submit button */
-button[type="submit"] {
-  background-color: #E83A22; 
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add pointer cursor */
+  margin-right: 10px; /* Add some space between buttons */
 }
 
-/* Next and back button */
+/* Style for the primary button */
+button[type="submit"] {
+  background-color: #E83A22; /* Green color for submit button */
+}
+
+/* Style for the secondary button */
 button[type="button"] {
-  background-color: #6c757d; 
+  background-color: #6c757d; /* Gray color for back button */
     
 }
 
@@ -116,7 +117,7 @@ button:hover {
   opacity: 0.8; 
 }
 
-/* Active effect for buttons */
+/* Active/focus effect for buttons */
 button:active,
 button:focus {
   outline: none; 
@@ -143,31 +144,31 @@ button[type="button"] {
 
 @media screen and (max-width: 600px) {
   .container {
-    max-width: 90%; 
-    margin-bottom: 10px; 
+    max-width: 90%; /* Reduce maximum width */
+    margin-bottom: 10px; /* Reduce bottom margin */
   }
 
   .headings {
-    font-size: 0.9em; 
+    font-size: 0.9em; /* Decrease font size */
   }
 
   .heading {
-    padding: 15px 50px; 
-    border-radius: 10px 10px 0 0; 
+    padding: 15px 50px; /* Decrease padding */
+    border-radius: 10px 10px 0 0; /* Adjust border radius */
   }
 
   .heading.active {
-    font-size: 1em; 
+    font-size: 1em; /* Increase font size */
   }
 
   form {
-    border-radius: 10px; 
+    border-radius: 10px; /* Adjust border radius */
   }
 
 
   label {
-    font-size: 0.9em; 
-    margin-bottom: 3px; 
+    font-size: 0.9em; /* Decrease font size */
+    margin-bottom: 3px; /* Decrease bottom margin */
   }
 
   input[type="text"],
@@ -175,10 +176,10 @@ button[type="button"] {
   input[type="tel"],
   textarea,
   select {
-    width: 100%; 
-    padding: 6px; 
-    margin-bottom: 8px; 
-    font-size: 0.9em; 
+    width: 100%; /* Adjust width to fit container */
+    padding: 6px; /* Decrease padding */
+    margin-bottom: 8px; /* Decrease bottom margin */
+    font-size: 0.9em; /* Decrease font size */
   }
 
   select {
@@ -198,19 +199,18 @@ button[type="button"] {
 
 
 button[type="submit"] {
-  background-color: #E83A22; 
+  background-color: #E83A22; /* Green color for submit button */
   margin-top: 10px;
   width: 275px;
 }
 
 
 button[type="button"] {
-  background-color: #6c757d; 
+  background-color: #6c757d; /* Gray color for back button */
   margin-top: 20px;
 
 }
 
 
 
-}
 }
