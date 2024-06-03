@@ -391,7 +391,7 @@ div.graphic-container-inner img {
   flex-direction: column;
   margin-top: -35em;
   width: 100vw;
-  background-image: url("/img/featuredbackground.svg");
+  background-image: url("../img/featuredbackground.svg");
   background-repeat: no-repeat;
 }
 .featured__text {
