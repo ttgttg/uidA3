@@ -1,10 +1,7 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const nextButton = document.getElementById("nextButton");
   const backButton = document.getElementById("backButton");
-  const customerForm = document.getElementById(
-    "customerDetailsForm"
-  );
+  const customerForm = document.getElementById("customerDetailsForm");
   const paymentForm = document.getElementById("paymentDetailsForm");
 
   // Event listener for the next button
@@ -22,4 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Hide the payment details form
     paymentForm.style.display = "none";
   });
+
+  // Lead to order confirmation upon submit
+  paymentForm.addEventListener("submit", submitted);
+
+  function submitted(e) {
+    if (!window.confirm("Are you sure?")) {
+      e.preventDefault();
+    } else {
+      e.preventDefault();
+      window.location.assign("order-confirmation.html");
+    }
+  }
 });

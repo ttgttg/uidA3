@@ -104,12 +104,6 @@ body {
     flex-direction: column; /* Stack items vertically */
   }
 
-  .checkoutDetails,
-  .orderDetails {
-    margin-left: 0; /* Remove left margin */
-  }
-
-
 
   .logo {
     margin-top: 20px; /* Adjust margin for logo */
@@ -146,9 +140,9 @@ body {
     margin-left: 10px; /* Decrease left margin */
   }
 
-  .orderDetails {
-    margin-top: 20px; /* Decrease top margin */
-    margin-left: 20px; /* Decrease left margin */
+  .orderDetails { 
+    margin:20px auto;
+    width:fit-content;
   }
 
 
