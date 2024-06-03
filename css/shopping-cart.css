@@ -176,6 +176,7 @@ button:hover {
   background-color: #aaa; /* Darker grey background color on hover */
 }
 
+
 @media screen and (max-width: 600px) {
   .cart {
     top: 0;

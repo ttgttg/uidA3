@@ -257,6 +257,7 @@ html, body {
     .productPage,
     .product {
       flex-direction: column; /* Stack items vertically */
+      width: 100%;
     }
   
     .pageLeft,
