@@ -24,7 +24,7 @@ function changeImage(newSrc) {
 }
 
 xbox.addEventListener("click", function () {
-  changeImage("uidA3/img/consoles.svg");
+  changeImage("img/consoles.svg");
 });
 
 ps.addEventListener("click", function () {
