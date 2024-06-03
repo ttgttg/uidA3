@@ -28,13 +28,13 @@ xbox.addEventListener("click", function () {
 });
 
 ps.addEventListener("click", function () {
-  changeImage("uidA3/img/psconsole.svg");
+  changeImage("img/psconsole.svg");
 });
 
 nintendo.addEventListener("click", function () {
-  changeImage("uidA3/img/switchconsole.svg");
+  changeImage("img/switchconsole.svg");
 });
 
 wii.addEventListener("click", function () {
-  changeImage("uidA3/img/wiiconsole.svg");
+  changeImage("img/wiiconsole.svg");
 });
