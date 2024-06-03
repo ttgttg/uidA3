@@ -12,7 +12,7 @@ input.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     if (input.value.trim() !== "") {
-      window.location.assign("html/product-list.html");
+      window.location.assign("product-list.html");
     } else {
       alert("Please enter something to start browsing!");
     }
