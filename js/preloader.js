@@ -6,6 +6,6 @@ if (preloader) {
       preloader.remove();
       window.addEventListener("scroll", handleAlert);
       handleAlert();
-    }, 200);
+    }, 2000);
   });
 }
